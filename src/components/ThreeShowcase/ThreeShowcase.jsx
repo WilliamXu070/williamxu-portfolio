@@ -62,6 +62,27 @@ export default function ThreeShowcase({ onClose }) {
   return (
     <div style={{ position: 'fixed', inset: 0, background: 'radial-gradient(1200px 800px at 70% -20%, rgba(255,255,255,0.05), rgba(0,0,0,0.9) 40%)', backdropFilter: 'blur(6px)', WebkitBackdropFilter: 'blur(6px)', zIndex: 999 }}>
       <OverlayControls mode={mode} setMode={setMode} onClose={onClose} />
+      {/* Bottom-left hint for controls */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 16,
+          bottom: 16,
+          zIndex: 1000,
+          fontSize: 12,
+          lineHeight: 1.2,
+          color: '#e5e7eb',
+          background: 'rgba(17,17,17,0.65)',
+          border: '1px solid rgba(255,255,255,0.12)',
+          padding: '6px 8px',
+          borderRadius: 8,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.35)'
+        }}
+      >
+        <span style={{ opacity: 0.9 }}>Shift+Click = rotate</span>
+        <span style={{ opacity: 0.5 }}> • </span>
+        <span style={{ opacity: 0.9 }}>Click = interact</span>
+      </div>
       <Canvas camera={{ position: [0, 0, 6], fov: 50 }} dpr={[1, 2]}>
         <ambientLight intensity={0.5} />
         <directionalLight intensity={1.2} position={[5, 5, 5]} />

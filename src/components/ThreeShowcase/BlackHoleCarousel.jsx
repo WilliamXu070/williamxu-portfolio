@@ -31,11 +31,12 @@ export default function BlackHoleCarousel() {
   const matRef = React.useRef();
   const lastTexIdx = React.useRef(-1);
 
-  // Resolve public paths respecting Vite base
-  const resolvePublicPath = (p) => {
-    const base = import.meta.env.BASE_URL || '/';
-    const normalized = p.startsWith('/') ? p.slice(1) : p;
-    return new URL(normalized, window.location.origin + base).pathname + window.location.search;
+  // Resolve public paths respecting Vite base (works in dev and build)
+  const resolvePublicPath = (relativePath) => {
+    const base = (import.meta.env.BASE_URL || '/').replace(/\/+/g, '/');
+    const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+    const cleanPath = relativePath.startsWith('/') ? relativePath : `/${relativePath}`;
+    return `${cleanBase}${cleanPath}`;
   };
 
   // Load a small sequence of textures from public/ to cycle through
