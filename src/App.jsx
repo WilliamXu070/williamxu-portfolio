@@ -55,86 +55,76 @@ const data = {
 
 const experiences = [
   {
-    company: "McMaster University",
-    title: "Researcher, Quantum Photonics",
-    period: "2024 — Present",
-    href: null,
-    summary: [
-      "Built end-to-end SPDC simulation toolchain on PICs (phasematching, JSA/JSI, Schmidt number, heralding/pair rates)",
-      "Implemented parameter sweeps, temperature/dispersion models, and automated testing",
-      "Produced publication-ready plots enabling rapid research iteration"
-    ],
-    tags: ["Python", "NumPy/SciPy", "Optics", "SPDC", "Simulation"],
-  },
-  {
     company: "CellScope Limited",
-    title: "Founder & President",
-    period: "2024 — Present",
+    title: "Founder & CEO — Optical Systems Design & Manufacturing",
+    period: "Jul 2023 — Present",
     href: "https://cellscope.ca",
     summary: [
-      "Designed ~$100 smartphone Fourier Ptychography microscope rivaling $40k lab systems",
-      "Engineered LED array drivers + phase retrieval algorithms on embedded hardware",
-      "Led demos/workshops, launched e-commerce platform, and positioned product for education & healthcare markets"
+      "Built a ~$100 Fourier Ptychography microscope achieving 2.2 μm resolution across 1.6 mm², rivaling ~$40k systems",
+      "Applied phase-retrieval + aberration-correction; validated sub-cellular imaging with USAF targets/PSF analysis",
+      "Designed optomechanical assemblies in Onshape; optimized NA/pupil/aberrations in Zemax",
+      "Performed bench alignment, metrology, and QA; verified repeatability < 1 μm; authored calibration SOPs",
+      "Secured licensing to mass-produce 100k units globally, bridging prototype → scalable manufacturing"
     ],
-    tags: ["Fourier Ptychography", "Raspberry Pi", "Python", "Hardware", "Product"],
+    tags: ["Fourier Ptychography", "Zemax", "Onshape", "Alignment", "Metrology", "Manufacturing"]
   },
   {
-    company: "McMaster Biophotonics Lab",
-    title: "Research Assistant",
-    period: "2023",
+    company: "McMaster University — Photonic Device Lab",
+    title: "Research Assistant — Quantum Source Simulation",
+    period: "Jul 2025 — Sep 2025",
     href: null,
     summary: [
-      "Contributed to shadow imaging and FLIM experiments with novel setups",
-      "Developed Python utilities for automated data capture, analysis, and workflow acceleration"
+      "Developed an SPDC simulation tool for entangled-photon pair generation (phase matching, polarization, dispersion)",
+      "Optimized bulk & waveguide systems in OptiBPM for spectral purity and pair-generation rate",
+      "Applied Gaussian-beam optics and fiber-coupling models; first-principles validation of source performance"
     ],
-    tags: ["Biophotonics", "Experimentation", "Python"],
-  },
+    tags: ["SPDC", "OptiBPM", "Waveguides", "Gaussian Beams", "Fiber Coupling", "Simulation"]
+  }
 ];
+
 
 
 const projects = [
   {
-    name: "AR Reference Pose (Hack the North 2025)",
+    name: "Wicker — AR Pose Reference (Hack the North 2025)",
     href: "https://devpost.com/software/ar-reference-pose?ref_content=my-projects-tab&ref_feature=my_projects",
     summary: [
-      "Built AR pipeline with AI-based 3D model generation + pose detection",
-      "Integrated CV with Snap Spectacles for real-time artist guidance",
-      "Led full-stack dev (Node.js backend, 3D auto-rigging, live AR rendering)",
+      "Led an AR system for artists that generates fully-rigged 3D models from voice prompts with real-time pose control",
+      "Architected a 4-component pipeline: Snap3D + Meshy AI + AWS for text-to-3D, auto-rigging, and cloud storage",
+      "Integrated hand-tracking and live rendering; Node.js, Python, and TypeScript services"
     ],
-    tags: ["AR", "AI", "Hackathon", "Node.js", "3D"],
+    tags: ["AR", "Hand Tracking", "Node.js", "TypeScript", "Python", "AWS", "3D"]
   },
   {
-    name: "FrameGen — Deep Learning Video Frame Interpolation",
+    name: "FrameGen — Deep Learning Video Interpolation",
     href: "https://github.com/WilliamXu070/framegen",
     summary: [
-      "Developed PyTorch pipeline for video frame interpolation (UCF101 dataset)",
-      "Implemented YAML configs for reproducible training + inference",
-      "Optimized training on RTX 5070 + Apple M4 Pro (MPS acceleration)",
-      "Explored slow-motion video + AR/VR animation applications"
+      "Built a video interpolation framework using optical-flow + attention-based CNN architectures",
+      "Multi-loss training: L1, SSIM, LPIPS, temporal consistency on UCF-101 with PyTorch",
+      "Used mixed-precision + grad accumulation; tuned for RTX and Apple M-series (MPS) performance"
     ],
-    tags: ["PyTorch", "Deep Learning", "Video", "AI", "GPU"],
+    tags: ["PyTorch", "UCF-101", "SSIM/LPIPS", "Optical Flow", "Mixed Precision", "GPU"]
   },
   {
     name: "SPDC Explorer",
     href: null,
     summary: [
-      "Created interactive notebooks to study SPDC physics",
-      "Explored pump bandwidth, waveguide geometry, and temperature effects",
-      "Visualized JSA/JSI and heralding efficiency"
+      "Interactive notebooks to study SPDC physics (JSA/JSI, Schmidt number, heralding efficiency)",
+      "Explored pump bandwidth, waveguide geometry, and temperature effects with parameter sweeps"
     ],
-    tags: ["Python", "Optics", "Jupyter"],
+    tags: ["Python", "Optics", "Jupyter", "SPDC", "Simulation"]
   },
   {
     name: "CellScope Microscope",
     href: "https://cellscope.ca",
     summary: [
-      "Designed <$100 smartphone Fourier Ptychography microscope",
-      "Achieved gigapixel reconstructions rivaling $40k lab systems",
-      "Launched as accessible tool for education + healthcare"
+      "Smartphone Fourier Ptychography microscope (~$100 BOM) with gigapixel reconstructions",
+      "Bench-tested alignment and QA; repeatability < 1 μm; SOPs for calibration and assembly"
     ],
-    tags: ["Hardware", "Imaging", "Reconstruction"],
-  },
+    tags: ["Hardware", "Computational Imaging", "Reconstruction", "Optomechanics"]
+  }
 ];
+
 
 
 const awards = [
