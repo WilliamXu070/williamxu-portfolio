@@ -70,6 +70,15 @@ checks confirmed asset loading under the Pages prefix, a loop restart, pause/pla
 reduced motion, keyboard-operated project notes, and a narrow layout without
 horizontal overflow. Full evidence is in [verification.json](verification.json).
 
+The normal page starts moving automatically after its scene assets load. The
+navigation and lower project links now follow the charcoal reference more
+closely. A single short intro fade accompanies the existing scene crossfade;
+reduced-motion preferences retain a still presentation with an explicit Play
+control. The capture below shows approximately five seconds of actual browser
+playback, rather than an image-generation animation.
+
+![Animated homepage preview](fsd-homepage-motion.gif)
+
 ![Desktop test](fsd-homepage-test.png)
 
 ![Mobile test](fsd-homepage-mobile.png)

@@ -19,5 +19,19 @@
     "browser_scene_ready": true,
     "reduced_motion_paused": true
   },
-  "scope": "Recorded replay; no live inference or infinitely generated environment. Production Pages branch is not deployed by the test workflow."
+  "scope": "Recorded replay; no live inference or infinitely generated environment. Production Pages branch is not deployed by the test workflow.",
+  "formatting_update": {
+    "navigation": "Aligned to the name at desktop widths",
+    "project_links": "Moved toward the lower edge to match the charcoal reference",
+    "entrance": "Single restrained intro fade; reduced-motion override"
+  },
+  "autoplay_capture": {
+    "frames": 120,
+    "source_start_seconds": 9.448,
+    "source_end_seconds": 14.323,
+    "capture_duration_ms": 4835,
+    "motion_state": "playing",
+    "console_errors": [],
+    "gif": "fsd-homepage-motion.gif"
+  }
 }

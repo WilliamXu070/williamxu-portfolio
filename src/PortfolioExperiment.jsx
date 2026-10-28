@@ -28,7 +28,6 @@ export default function PortfolioExperiment() {
         <nav className="main-nav" aria-label="Main navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
         <div className="hero-intro"><h1 id="name">William Xu</h1><p>Optics, perception, and hardware.</p></div>
         <nav className="project-index" aria-label="Featured projects"><a href="#cellscope">CellScope</a><span aria-hidden="true" /><a href="#fsd">FSD</a><span aria-hidden="true" /><a href="#waferwatch">WaferWatch</a></nav>
-        <a className="continue-link" href="#projects" aria-label="Explore selected projects"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></a>
       </section>
 
       <section className="selected-work page-width" id="projects" aria-labelledby="work-title">

@@ -23,7 +23,7 @@ export default function FsdScene() {
     preference.addEventListener('change', change); return () => preference.removeEventListener('change', change);
   }, []);
   return <>
-    <div className={`fsd-scene ${status === 'ready' ? 'is-ready' : ''}`} aria-hidden="true">
+    <div className={`fsd-scene ${status === 'ready' ? 'is-ready' : ''}`} data-motion={paused ? 'paused' : 'playing'} aria-hidden="true">
       <img className="scene-poster" src={`${import.meta.env.BASE_URL}fsd/poster.jpg`} alt="" fetchPriority="high" />
       <div className="scene-canvas" ref={host} />
     </div>

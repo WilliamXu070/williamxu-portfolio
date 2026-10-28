@@ -41,6 +41,8 @@ and scene poster; it does not change the separate mesh licenses.
   losslessly into opaque RGB atlases. Matched recorded poses and actors interpolate
   for display. No source camera media, model weights, training data, or ground-truth
   arrays are included. The poster is an existing render of that reconstruction.
+- The documentation screenshots and animated homepage capture are derivative
+  visualizations of the same scene and retain this attribution and dataset license.
 - Evidence: `provenance.json` records source identity and output hashes.
 
 This is an independent personal research visualization. No endorsement or
