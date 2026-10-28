@@ -47,6 +47,59 @@
           "The project took me to ISEF 2024 and led to a publication on cellphone-based Fourier ptychography through IEEE. Those results describe the research prototype. The later mechanical design is a separate iteration focused on how someone loads, positions and focuses a sample."
         ]
       }
+    ],
+    "media": {
+      "src": "projects/evidence/cellscope-prototype.webp",
+      "thumbnail": "projects/evidence/cellscope-prototype-thumb.webp",
+      "width": 1864,
+      "height": 1462,
+      "title": "CellScope research prototype",
+      "alt": "CellScope research prototype",
+      "caption": "The physical cellphone microscope: phone and imaging optics above the sample, with the programmable illumination array below.",
+      "kind": "Prototype photograph",
+      "source": "William Xu · ISEF project archive",
+      "fit": "cover"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/cellscope-acquisition.webp",
+        "thumbnail": "projects/evidence/cellscope-acquisition-thumb.webp",
+        "width": 457,
+        "height": 459,
+        "title": "Phone, sample and illumination array",
+        "alt": "Phone, sample and illumination array",
+        "caption": "The acquisition setup used for the research prototype. Keeping the sample and illumination aligned matters across the image sequence.",
+        "kind": "Prototype photograph",
+        "source": "William Xu · ISEF project archive",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/cellscope-resolution.webp",
+        "thumbnail": "projects/evidence/cellscope-resolution-thumb.webp",
+        "width": 2200,
+        "height": 1562,
+        "title": "Raw image, reconstructed amplitude and microscope reference",
+        "alt": "Raw image, reconstructed amplitude and microscope reference",
+        "caption": "My original resolution-target comparison: raw cellphone data, Fourier-ptychographic reconstruction and a 40× tabletop-microscope reference. The reference is a separate instrument.",
+        "kind": "Experimental comparison",
+        "source": "William Xu · ISEF presentation figure",
+        "fit": "contain",
+        "section": 1
+      },
+      {
+        "src": "projects/evidence/cellscope-field-of-view.webp",
+        "thumbnail": "projects/evidence/cellscope-field-of-view-thumb.webp",
+        "width": 2200,
+        "height": 1635,
+        "title": "Cell sample: raw data, reconstructed amplitude and phase",
+        "alt": "Cell sample: raw data, reconstructed amplitude and phase",
+        "caption": "The original field-of-view figure shows the captured sample and the reconstructed amplitude and phase, including enlarged regions for inspection.",
+        "kind": "Experimental comparison",
+        "source": "William Xu · ISEF presentation figure",
+        "fit": "contain",
+        "section": 1
+      }
     ]
   },
   {
@@ -98,7 +151,21 @@
           "The result is an implemented application for following fabrication work and inspecting the evidence around individual steps. I also built verification mechanisms for lifecycle transitions, checkpoints, permissions, collaboration and data migrations. The system supports investigating where an error occurred; identifying the actual cause still depends on the measurements and process evidence. Its core contribution is making that history accessible without losing the details needed to investigate it."
         ]
       }
-    ]
+    ],
+    "media": {
+      "src": "projects/evidence/waferwatch-prototype.webp",
+      "thumbnail": "projects/evidence/waferwatch-prototype-thumb.webp",
+      "width": 1728,
+      "height": 997,
+      "title": "WaferWatch wafer and die visualizer",
+      "alt": "WaferWatch wafer and die visualizer",
+      "caption": "An earlier working prototype showing the wafer, selectable dies and process stages. The current process-history application described below is a later iteration.",
+      "kind": "Application screenshot",
+      "source": "William Xu · WaferWatch repository",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/WilliamXu070/WaferWatch/blob/main/wafer-post-dice-playwright.png"
+    },
+    "evidence": []
   },
   {
     "slug": "friday",
@@ -159,6 +226,40 @@
           "Our team finished **Top 12 overall and third in the OpenAI 5th Teammate Challenge at HackMIT 2026**. FRIDAY brought together an interactive room editor, bounded agent tools and a product workflow that users could compare and revise."
         ]
       }
+    ],
+    "media": {
+      "src": "projects/evidence/friday-room-editor.webp",
+      "thumbnail": "projects/evidence/friday-room-editor-thumb.webp",
+      "width": 2200,
+      "height": 1224,
+      "title": "FRIDAY room editor with furniture and design alternatives",
+      "alt": "FRIDAY room editor with furniture and design alternatives",
+      "caption": "The team’s room editor with placed furniture, three candidate designs and an explicit budget. I led the 3D environment integration and contributed to the agent constraints, UI and commerce path. The room is a licensed demo scene, not a scan I captured.",
+      "kind": "Application screenshot",
+      "source": "FRIDAY team · repository demo",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/LeeSinLiang/FRIDAY/blob/main/docs/assets/friday-room-design.png",
+      "credit": {
+        "label": "Room asset: HAUSSMANN APARTMENT by Stéphane Agullo (sa3d)",
+        "url": "https://superspl.at/scene/4de797f4",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/friday-sandbox-checkout.webp",
+        "thumbnail": "projects/evidence/friday-sandbox-checkout-thumb.webp",
+        "width": 2100,
+        "height": 1360,
+        "title": "FRIDAY cart and accepted Visa IDX sandbox request",
+        "alt": "FRIDAY cart and accepted Visa IDX sandbox request",
+        "caption": "A frame from our HackMIT recording connects selected products to the cart and an accepted Visa IDX sandbox request. This did not authorize payment or create a vendor order. Browser chrome, account details and response identifiers are cropped out.",
+        "kind": "Recorded application demo",
+        "source": "FRIDAY team · 20 September 2026 demo, 00:25",
+        "fit": "contain",
+        "section": 2
+      }
     ]
   },
   {
@@ -211,7 +312,21 @@
           "HALO became an Android prototype bringing wearable and clinical-data paths into a shared application with a local inference implementation. My work included real-device integration and debugging across the model, data and UI paths. The prototype establishes those engineering connections, with clinical-record access configured against a demo server."
         ]
       }
-    ]
+    ],
+    "media": {
+      "src": "projects/evidence/halo-model-loader.webp",
+      "thumbnail": "projects/evidence/halo-model-loader-thumb.webp",
+      "width": 910,
+      "height": 398,
+      "title": "HALO local model loading and failure cleanup",
+      "alt": "HALO local model loading and failure cleanup",
+      "caption": "The actual Kotlin model-loading path: check the model and tokenizer, bootstrap Qualcomm QNN, load the ExecuTorch module and clean up on failure. This is implementation evidence; it is not a phone UI capture or a latency benchmark.",
+      "kind": "Implementation excerpt",
+      "source": "HALO team repository · OnDeviceLlmService.kt, lines 1344–1363",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/dadisudhir/HALO/blob/6c490a9c2c461c0dc3fde7782479b7d374f34de4/app/src/main/java/com/health/secondbrain/llm/OnDeviceLlmService.kt#L1344-L1363"
+    },
+    "evidence": []
   },
   {
     "slug": "photonics",
@@ -252,6 +367,59 @@
           "The work has produced a fabrication-aware model and an implemented workflow for exploring waveguide-bend designs. It also connects to fabrication-support documents and layout work. At this stage, the optical results are simulation results, and a measured device result would require fabrication and optical characterization.",
           "The main engineering outcome is a design process tied to a defined platform. It makes the assumptions explicit enough that a candidate geometry can be evaluated against the same physical and numerical conditions as its reference."
         ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/photonics-bend-volume.webp",
+      "thumbnail": "projects/evidence/photonics-bend-volume-thumb.webp",
+      "width": 2200,
+      "height": 1100,
+      "title": "Lithium niobate bend geometry and simulation regions",
+      "alt": "Lithium niobate bend geometry and simulation regions",
+      "caption": "An archived bend iteration showing the 3D core, input/output guides, source, monitor and simulation regions. Its 1.83 µm width and 1 µm height belong to that earlier configuration; the active fabrication stack is described below. This is a geometry visualization, not an optical-field or transmission result.",
+      "kind": "Geometry study",
+      "source": "William Xu · Lumerical/LumOpt project archive",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/photonics-polygon-joins.webp",
+        "thumbnail": "projects/evidence/photonics-polygon-joins-thumb.webp",
+        "width": 2200,
+        "height": 846,
+        "title": "Input and output polygon joins",
+        "alt": "Input and output polygon joins",
+        "caption": "A geometry diagnostic from the 50 µm bend study, inspecting where the bend meets the straight guides. The visible joins are part of checking the model before interpreting optical results.",
+        "kind": "Geometry diagnostic",
+        "source": "William Xu · bend parameterization archive",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/photonics-parameterization.webp",
+        "thumbnail": "projects/evidence/photonics-parameterization-thumb.webp",
+        "width": 2200,
+        "height": 1646,
+        "title": "Centerline, curvature and parameter knots",
+        "alt": "Centerline, curvature and parameter knots",
+        "caption": "An earlier parameterization diagnostic: bend shape, curvature along arc length, its numerical derivative and the segment knots. These plots describe the geometry supplied to the solver.",
+        "kind": "Parameterization diagnostic",
+        "source": "William Xu · simulation archive",
+        "fit": "contain",
+        "section": 1
+      },
+      {
+        "src": "projects/evidence/photonics-euler-reconstruction.webp",
+        "thumbnail": "projects/evidence/photonics-euler-reconstruction-thumb.webp",
+        "width": 1680,
+        "height": 900,
+        "title": "Generalized Euler seed reconstruction comparison",
+        "alt": "Generalized Euler seed reconstruction comparison",
+        "caption": "A reconstruction check against the reference-paper seed data. This comparison checks the recreated geometry; it is not a new measured device result.",
+        "kind": "Reference reconstruction",
+        "source": "William Xu · paper-reconstruction tools",
+        "fit": "contain",
+        "section": 2
       }
     ]
   },
@@ -296,6 +464,46 @@
           "The values above are calculated design quantities. They are not measured resist resolution or demonstrated positioning accuracy. The next experimental stage is to connect the optical model to field-uniformity measurements, focus sweeps, printed patterns and repeated stage motion."
         ]
       }
+    ],
+    "media": {
+      "src": "projects/evidence/hackerfab-zemax-paths.webp",
+      "thumbnail": "projects/evidence/hackerfab-zemax-paths-thumb.webp",
+      "width": 1920,
+      "height": 1040,
+      "title": "Native Zemax model of exposure and camera paths",
+      "alt": "Native Zemax model of exposure and camera paths",
+      "caption": "My native OpticStudio study of the shared stepper optics: violet exposure rays and the red camera branch. The objective uses a published Olympus prescription as a proxy; it is not the commercial objective’s internal prescription.",
+      "kind": "Native Zemax capture",
+      "source": "William Xu · optics-only study, September 2026",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/hackerfab-objective-proxy.webp",
+        "thumbnail": "projects/evidence/hackerfab-objective-proxy-thumb.webp",
+        "width": 1138,
+        "height": 878,
+        "title": "Curved objective prescription in OpticStudio",
+        "alt": "Curved objective prescription in OpticStudio",
+        "caption": "The imported seven-element objective proxy, inspected as curved glass in the native model. It establishes a traceable model for evaluation, with the commercial objective’s internal prescription still unknown.",
+        "kind": "Native Zemax capture",
+        "source": "William Xu · published-prescription proxy study",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/hackerfab-exposure-spots.webp",
+        "thumbnail": "projects/evidence/hackerfab-exposure-spots-thumb.webp",
+        "width": 600,
+        "height": 573,
+        "title": "Exposure-path spot diagram at the reference spacing",
+        "alt": "Exposure-path spot diagram at the reference spacing",
+        "caption": "The exposure-path check did not pass at the preserved reference spacing. Missing accepted edge-field spots are not zero aberration. This result identifies an optical problem to resolve before claiming printable resolution.",
+        "kind": "Optical evaluation",
+        "source": "William Xu · native OpticStudio spot analysis",
+        "fit": "contain",
+        "section": 2
+      }
     ]
   },
   {
@@ -337,6 +545,33 @@
         "paragraphs": [
           "The outcome is a documented set of requirements, an architecture comparison and a first-board recommendation. This remains a pre-prototype design study. Current accuracy, ripple, thermal drift and fault behavior still require characterization, beginning with a dummy load before connecting the laser."
         ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/laser-requirements.webp",
+      "thumbnail": "projects/evidence/laser-requirements-thumb.webp",
+      "width": 1352,
+      "height": 1800,
+      "title": "Original laser-driver power and thermal requirements",
+      "alt": "Original laser-driver power and thermal requirements",
+      "caption": "The original requirements sketch connects the laser diode, power conversion, current sensing and thermal control. It records the starting requirements and candidate architecture, before a validated driver board.",
+      "kind": "Design notebook",
+      "source": "Laser-driver project · Design Requirements, page 1",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/laser-control-notes.webp",
+        "thumbnail": "projects/evidence/laser-control-notes-thumb.webp",
+        "width": 1394,
+        "height": 1800,
+        "title": "Electrical, thermal and control requirements",
+        "alt": "Electrical, thermal and control requirements",
+        "caption": "The second notebook page records the 0–3.5 A current range, 12 V source, heatsink/fan considerations and TEC/PID control questions. These are design requirements, not test measurements.",
+        "kind": "Design notebook",
+        "source": "Laser-driver project · Design Requirements, page 2",
+        "fit": "contain",
+        "section": 0
       }
     ]
   },
@@ -470,6 +705,59 @@
           "The project connected structural analysis to a fabrication constraint I could see directly: every reinforcement choice had to fit into the same sheet and survive the way we assembled it."
         ]
       }
+    ],
+    "media": {
+      "src": "projects/evidence/bridge-load-test.webp",
+      "thumbnail": "projects/evidence/bridge-load-test-thumb.webp",
+      "width": 960,
+      "height": 540,
+      "title": "Bifrost bridge in the physical load test",
+      "alt": "Bifrost bridge in the physical load test",
+      "caption": "A frame from the team’s original bridge-testing video. The footage documents the built bridge and loading setup; the 1.367 kN value discussed below is the design prediction.",
+      "kind": "Physical test footage",
+      "source": "CIV102 Team 202 · original test video, 00:00",
+      "fit": "cover"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/bridge-cut-layout.webp",
+        "thumbnail": "projects/evidence/bridge-cut-layout-thumb.webp",
+        "width": 1041,
+        "height": 1347,
+        "title": "Matboard cutting layout",
+        "alt": "Matboard cutting layout",
+        "caption": "The team’s cutting layout places the web, flange and reinforcement pieces within the available sheet. It makes the material-budget constraint visible.",
+        "kind": "Engineering drawing",
+        "source": "CIV102 Team 202 · Engineering Assembly, page 3",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/bridge-assembly.webp",
+        "thumbnail": "projects/evidence/bridge-assembly-thumb.webp",
+        "width": 1041,
+        "height": 1347,
+        "title": "Bridge elevation and cross-section",
+        "alt": "Bridge elevation and cross-section",
+        "caption": "The team’s original dimensions and cross-section show the tall webs and doubled top flange used in the final design.",
+        "kind": "Engineering drawing",
+        "source": "CIV102 Team 202 · Engineering Assembly, page 4",
+        "fit": "contain",
+        "section": 1
+      },
+      {
+        "src": "projects/evidence/bridge-failure.webp",
+        "thumbnail": "projects/evidence/bridge-failure-thumb.webp",
+        "width": 960,
+        "height": 540,
+        "title": "Bridge failure during the physical test",
+        "alt": "Bridge failure during the physical test",
+        "caption": "The bridge during failure in the original test footage. A measured failure load cannot be read from this frame, so the analysis prediction remains separate from the physical observation.",
+        "kind": "Physical test footage",
+        "source": "CIV102 Team 202 · original test video, 00:04.64",
+        "fit": "contain",
+        "section": 2
+      }
     ]
   },
   {
@@ -512,6 +800,33 @@
           "The useful result was a traceable design decision: we moved from several plausible mechanisms to a selected concept by testing the uncertainties that mattered to the requirements."
         ]
       }
+    ],
+    "media": {
+      "src": "projects/evidence/can-morph-chart.webp",
+      "thumbnail": "projects/evidence/can-morph-chart-thumb.webp",
+      "width": 520,
+      "height": 400,
+      "title": "Original can-opening morphology chart",
+      "alt": "Original can-opening morphology chart",
+      "caption": "Our team’s original whiteboard chart breaks opening into functions and explores mechanisms for each one. This is the early design work behind the concepts we later compared.",
+      "kind": "Design notebook photograph",
+      "source": "Praxis I team · original design report, page 8",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/can-underwater-concept.webp",
+        "thumbnail": "projects/evidence/can-underwater-concept-thumb.webp",
+        "width": 502,
+        "height": 415,
+        "title": "CAD concept for opening a can under water",
+        "alt": "CAD concept for opening a can under water",
+        "caption": "One of the alternatives considered during convergence: a collar that holds water around the opening. The CAD illustration documents a candidate mechanism, before the team selected the slider concept.",
+        "kind": "Concept CAD illustration",
+        "source": "Praxis I team · original design report, page 8",
+        "fit": "contain",
+        "section": 0
+      }
     ]
   },
   {
@@ -549,7 +864,20 @@
           "The result was a sandboxed test runtime with inspectable histories and recovery-oriented workflows. It does not establish that a model-generated test is correct simply because it executes. Generation, execution and critique remain separate parts of the process."
         ]
       }
-    ]
+    ],
+    "media": {
+      "src": "projects/evidence/jungle-approval-queue.webp",
+      "thumbnail": "projects/evidence/jungle-approval-queue-thumb.webp",
+      "width": 1048,
+      "height": 973,
+      "title": "Jungle application approval queue",
+      "alt": "Jungle application approval queue",
+      "caption": "The running desktop application from the original demo: persisted projects, approval-gated runs, execution status and a run timeline. This capture includes failed and cancelled runs, showing how the interface exposes execution state.",
+      "kind": "Recorded application demo",
+      "source": "Jungle project · original screen recording, 01:33.69",
+      "fit": "contain"
+    },
+    "evidence": []
   },
   {
     "slug": "wicker",
@@ -612,6 +940,35 @@
           "Selection has to remain consistent across the imported geometry, scene coordinates and the point the user indicates on screen. A model that renders correctly can still produce the wrong selection or measurement if those representations disagree. I added diagnostic workflows and replayable tests around selection accuracy and coordinate mapping so those errors could be examined repeatedly.",
           "The result is my extended Looky fork of QuickLookStep. My contributions build on the original viewer, adding more detailed geometry interaction and repeatable ways to investigate selection and measurement behavior."
         ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/looky-step-import.webp",
+      "thumbnail": "projects/evidence/looky-step-import-thumb.webp",
+      "width": 1024,
+      "height": 768,
+      "title": "STEP fixture rendered by Looky",
+      "alt": "STEP fixture rendered by Looky",
+      "caption": "An original recorded viewer test after loading a STEP cube-with-hole fixture. This demonstrates the imported geometry in the viewer; selection accuracy and measurement require their separate diagnostics.",
+      "kind": "Recorded viewer test",
+      "source": "Looky extended fork · STEP load fixture",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/WilliamXu070/Looky/tree/main/testing/results/screenshots/cube-hole-step"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/looky-adapter-import.webp",
+        "thumbnail": "projects/evidence/looky-adapter-import-thumb.webp",
+        "width": 1024,
+        "height": 768,
+        "title": "3MF adapter fixture rendered by Looky",
+        "alt": "3MF adapter fixture rendered by Looky",
+        "caption": "A second original load test using a 3MF adapter model. The adapter is an import fixture, not a claim that I designed the part. Only the initial-load capture is shown here.",
+        "kind": "Recorded viewer test",
+        "source": "Looky extended fork · 3MF load fixture",
+        "fit": "contain",
+        "section": 0,
+        "sourceUrl": "https://github.com/WilliamXu070/Looky/tree/main/testing/results/screenshots/thor-3mf-user-verify2"
       }
     ]
   },

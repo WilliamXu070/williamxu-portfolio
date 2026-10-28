@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-28",
+  "mobile": [
+    {
+      "slug": "waferwatch",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "WaferWatch wafer and die visualizer",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/waferwatch-prototype.webp"
+        }
+      ],
+      "title": "WaferWatch \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "friday",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "FRIDAY room editor with furniture and design alternatives",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/friday-room-editor.webp"
+        },
+        {
+          "alt": "FRIDAY cart and accepted Visa IDX sandbox request",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/friday-sandbox-checkout.webp"
+        }
+      ],
+      "title": "FRIDAY \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "halo",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "HALO local model loading and failure cleanup",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/halo-model-loader.webp"
+        }
+      ],
+      "title": "HALO \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "photonics",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "Lithium niobate bend geometry and simulation regions",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/photonics-bend-volume.webp"
+        },
+        {
+          "alt": "Input and output polygon joins",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/photonics-polygon-joins.webp"
+        },
+        {
+          "alt": "Centerline, curvature and parameter knots",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/photonics-parameterization.webp"
+        },
+        {
+          "alt": "Generalized Euler seed reconstruction comparison",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/photonics-euler-reconstruction.webp"
+        }
+      ],
+      "title": "Lithium niobate photonics \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "hackerfab",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "Native Zemax model of exposure and camera paths",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/hackerfab-zemax-paths.webp"
+        },
+        {
+          "alt": "Curved objective prescription in OpticStudio",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/hackerfab-objective-proxy.webp"
+        },
+        {
+          "alt": "Exposure-path spot diagram at the reference spacing",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/hackerfab-exposure-spots.webp"
+        }
+      ],
+      "title": "HackerFab stepper \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "laser-driver",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "Original laser-driver power and thermal requirements",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/laser-requirements.webp"
+        },
+        {
+          "alt": "Electrical, thermal and control requirements",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/laser-control-notes.webp"
+        }
+      ],
+      "title": "Laser diode current driver \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "bifrost",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "Bifrost bridge in the physical load test",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/bridge-load-test.webp"
+        },
+        {
+          "alt": "Matboard cutting layout",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/bridge-cut-layout.webp"
+        },
+        {
+          "alt": "Bridge elevation and cross-section",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/bridge-assembly.webp"
+        },
+        {
+          "alt": "Bridge failure during the physical test",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/bridge-failure.webp"
+        }
+      ],
+      "title": "The Bifr\u00f6st \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "jungle",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "Jungle application approval queue",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/jungle-approval-queue.webp"
+        }
+      ],
+      "title": "Jungle \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "looky",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "STEP fixture rendered by Looky",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/looky-step-import.webp"
+        },
+        {
+          "alt": "3MF adapter fixture rendered by Looky",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/looky-adapter-import.webp"
+        }
+      ],
+      "title": "Looky \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "can-opening",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "Original can-opening morphology chart",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/can-morph-chart.webp"
+        },
+        {
+          "alt": "CAD concept for opening a can under water",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/can-underwater-concept.webp"
+        }
+      ],
+      "title": "A quieter can opening \u2014 William Xu",
+      "width": 390
+    },
+    {
+      "slug": "cellscope",
+      "canvasCount": 0,
+      "documentWidth": 390,
+      "images": [
+        {
+          "alt": "CellScope research prototype",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/cellscope-prototype.webp"
+        },
+        {
+          "alt": "Phone, sample and illumination array",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/cellscope-acquisition.webp"
+        },
+        {
+          "alt": "Raw image, reconstructed amplitude and microscope reference",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/cellscope-resolution.webp"
+        },
+        {
+          "alt": "Cell sample: raw data, reconstructed amplitude and phase",
+          "loaded": true,
+          "src": "/williamxu-portfolio/projects/evidence/cellscope-field-of-view.webp"
+        }
+      ],
+      "title": "CellScope \u2014 William Xu",
+      "width": 390
+    }
+  ],
+  "wide": {
+    "width": 1280,
+    "height": 900,
+    "overflow": false
+  },
+  "console": [],
+  "checks": {
+    "production_build": "pass",
+    "scoped_eslint": "pass",
+    "existing_scene_tests": "3/3 pass",
+    "asset_decoding_and_dimensions": "26/26 pass",
+    "public_image_count": 26,
+    "projects_with_evidence": 11,
+    "full_size_image_link": "FRIDAY destination renders at 2200 x 1224"
+  },
+  "limitations": [
+    "HALO has implementation evidence but no recovered phone UI capture.",
+    "WaferWatch shows its earlier prototype; current app authentication is unavailable.",
+    "Cloud-only iCloud photos were not accessible while signed out.",
+    "Astronomy, Wicker, Newmux and FrameGen retain clearly labeled explanatory schematics.",
+    "The existing lazily loaded Three.js renderer retains its chunk-size warning."
+  ],
+  "screenshots": [
+    {
+      "file": "docs/evidence-friday-mobile.png",
+      "width": 390,
+      "height": 4210,
+      "sha256": "1ced03ad2035ab8ad7d529ddc2296b9683022d0c6afb0cac277d455b1293f468"
+    },
+    {
+      "file": "docs/evidence-halo-mobile.png",
+      "width": 390,
+      "height": 3567,
+      "sha256": "4dfc74abcf151c638cad1323e882e965048631c1f25fbdf80b5b3aea5d20ebc9"
+    },
+    {
+      "file": "docs/evidence-home-research.png",
+      "width": 1280,
+      "height": 900,
+      "sha256": "82f822c4a3a528217d8c32cd443577b78d3dbf39d3632820a9d11e499bdee589"
+    },
+    {
+      "file": "docs/evidence-home-selected.png",
+      "width": 1280,
+      "height": 900,
+      "sha256": "4eb13ef35494a497e289e1bc3990b77c01dc51548db7c36f3184364eb502f9ae"
+    },
+    {
+      "file": "docs/evidence-friday-desktop.png",
+      "width": 1280,
+      "height": 900,
+      "sha256": "17258d169c8d282fbf7a930fa22af324d23a64366c8884ffe2c48839410d348b"
+    }
+  ]
+}

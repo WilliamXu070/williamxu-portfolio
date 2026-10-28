@@ -1,6 +1,14 @@
 const base = import.meta.env.BASE_URL;
 
 export default function ProjectArtwork({ project, eager = false }) {
+  if (project.media) {
+    const media = project.media;
+    return <img className={`evidence-image media-${media.fit || 'contain'}`}
+      src={`${base}${eager ? media.src : media.thumbnail}`}
+      alt={media.alt} loading={eager ? 'eager' : 'lazy'} decoding="async"
+      width={media.width} height={media.height} />;
+  }
+
   if (project.art === 'image' || project.art === 'fsd') {
     return <img src={`${base}${project.art === 'image' ? 'projects/cellscope.jpg' : 'fsd/poster.jpg'}`}
       alt={project.art === 'image' ? 'The physical CellScope microscope prototype' : 'Recorded camera-perception output with detected vehicles and reconstructed road surfaces'}

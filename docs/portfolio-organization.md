@@ -44,16 +44,14 @@ Hash routes support direct project links and refreshes under the existing GitHub
 
 The content inherits the charcoal background, light sans-serif typography and restrained spacing of the approved hero. The hierarchy changes with importance: one large prototype feature, two selected-work features, three research studies, two team builds and a text index. Sixteen identical thumbnail cards would flatten that hierarchy.
 
-CellScope uses the existing prototype photo. FSD uses the exported scene poster. The other visuals are code-native explanatory schematics, explicitly captioned as schematics on the project pages. They do not claim to be CAD renders, application screenshots, simulations or fabricated devices.
-
-The next useful visual pass is to add project evidence in place of these opening schematics: a WaferWatch process/history screenshot; FRIDAY's editor; HALO on the phone; photonics cross-section, layout and field plots; HackerFab optical/CAD drawings; the driver architecture comparison; coursework build and test photographs. Keep the current explanations beside those artifacts.
+Eleven project openings now use 26 images from the original project records, with supporting figures alongside the relevant design decisions. FSD retains its recorded scene. HALO currently shows a clearly labeled implementation excerpt; WaferWatch shows an earlier working prototype. Four smaller projects retain labeled schematics. See [the evidence pass](project-evidence.md) for the complete register, sources and remaining capture gaps.
 
 ## Files to continue from
 
 - `src/PortfolioExperiment.jsx`: homepage hierarchy and hash navigation.
 - `src/content/projects.json`: all 16 project narratives, roles, stages and evidence links.
 - `src/components/ProjectPage.jsx`: shared case-study layout and section navigation.
-- `src/components/ProjectArtwork.jsx`: prototype photo, recorded poster and schematic visuals.
+- `src/components/ProjectArtwork.jsx`: original project media, recorded poster and schematic fallbacks.
 - `src/portfolio.css`: shared responsive formatting.
 - Existing `src/components/FsdScene.jsx`, `src/scene/` and `public/fsd/`: unchanged scene implementation and recorded outputs.
 
