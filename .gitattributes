@@ -1,0 +1,4 @@
+public/fsd/*.json text eol=lf
+*.glb binary
+*.png binary
+*.jpg binary

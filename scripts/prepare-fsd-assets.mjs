@@ -85,7 +85,8 @@ const clip = {
 };
 await writeFile(path.join(output, 'recording.json'), JSON.stringify(clip));
 const assetRoot = path.join(source, 'artifacts/renderer-redesign/runtime-assets');
-for (const name of ['cybertruck.glb', 'detected-car.glb', 'detected-human.glb', 'manifest.json']) await copyFile(path.join(assetRoot, name), path.join(output, name));
+for (const name of ['cybertruck.glb', 'detected-car.glb', 'detected-human.glb']) await copyFile(path.join(assetRoot, name), path.join(output, name));
+await writeFile(path.join(output, 'manifest.json'), JSON.stringify(await readJson(path.join(assetRoot, 'manifest.json')), null, 2) + '\n');
 await copyFile(path.join(source, 'artifacts/renderer-redesign/dataset-replay/road-threshold-live-verified.jpg'), path.join(output, 'poster.jpg'));
 const sources = {};
 for (const name of ['runtime-scene.js', 'temporal-surface.js', 'temporal-road.mjs', 'replay-interpolation.mjs', 'presentation-ground.mjs']) sources[`simulator/${name}`] = sha256(await readFile(path.join(source, 'simulator', name)));
