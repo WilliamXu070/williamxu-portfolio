@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-28",
+  "projectCount": 16,
+  "originalContentUnchanged": true,
+  "projectContentSha256": "4a7fa5e87fef37458f6f3ebdc13f49f1814dde67ded85b374bf4caef7710a023",
+  "allEvidenceDecodedFromPreview": [
+    {
+      "src": "projects/evidence/cellscope-prototype.webp",
+      "width": 1864,
+      "height": 1462,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/cellscope-acquisition.webp",
+      "width": 457,
+      "height": 459,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/cellscope-resolution.webp",
+      "width": 2200,
+      "height": 1562,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/cellscope-field-of-view.webp",
+      "width": 2200,
+      "height": 1635,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/waferwatch-prototype.webp",
+      "width": 1728,
+      "height": 997,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/friday-room-editor.webp",
+      "width": 2200,
+      "height": 1224,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/friday-sandbox-checkout.webp",
+      "width": 2100,
+      "height": 1360,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/halo-model-loader.webp",
+      "width": 910,
+      "height": 398,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/photonics-bend-volume.webp",
+      "width": 2200,
+      "height": 1100,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/photonics-polygon-joins.webp",
+      "width": 2200,
+      "height": 846,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/photonics-parameterization.webp",
+      "width": 2200,
+      "height": 1646,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/photonics-euler-reconstruction.webp",
+      "width": 1680,
+      "height": 900,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/hackerfab-zemax-paths.webp",
+      "width": 1920,
+      "height": 1040,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/hackerfab-objective-proxy.webp",
+      "width": 1138,
+      "height": 878,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/hackerfab-exposure-spots.webp",
+      "width": 600,
+      "height": 573,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/laser-requirements.webp",
+      "width": 1352,
+      "height": 1800,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/laser-control-notes.webp",
+      "width": 1394,
+      "height": 1800,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/bridge-load-test.webp",
+      "width": 960,
+      "height": 540,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/bridge-cut-layout.webp",
+      "width": 1041,
+      "height": 1347,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/bridge-assembly.webp",
+      "width": 1041,
+      "height": 1347,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/bridge-failure.webp",
+      "width": 960,
+      "height": 540,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/can-morph-chart.webp",
+      "width": 520,
+      "height": 400,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/can-underwater-concept.webp",
+      "width": 502,
+      "height": 415,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/jungle-approval-queue.webp",
+      "width": 1048,
+      "height": 973,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/looky-step-import.webp",
+      "width": 1024,
+      "height": 768,
+      "httpStatus": 200
+    },
+    {
+      "src": "projects/evidence/looky-adapter-import.webp",
+      "width": 1024,
+      "height": 768,
+      "httpStatus": 200
+    }
+  ],
+  "browser": {
+    "routes": [
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/cellscope-prototype.webp",
+            "width": 1864
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [
+          "Instrument",
+          "Acquisition",
+          "Resolution",
+          "Field of view"
+        ],
+        "title": "CellScope",
+        "url": "#/projects/cellscope",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/waferwatch-prototype.webp",
+            "width": 1728
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [
+          "Earlier prototype"
+        ],
+        "title": "WaferWatch",
+        "url": "#/projects/waferwatch",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/friday-room-editor.webp",
+            "width": 2200
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 9,
+        "tabs": [
+          "Room editor",
+          "Sandbox checkout"
+        ],
+        "title": "FRIDAY",
+        "url": "#/projects/friday",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": false,
+            "src": "/williamxu-portfolio/projects/evidence/halo-model-loader.webp",
+            "width": 0
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 9,
+        "tabs": [
+          "Model-loading implementation"
+        ],
+        "title": "HALO",
+        "url": "#/projects/halo",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/photonics-bend-volume.webp",
+            "width": 2200
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [
+          "Geometry",
+          "Polygon joins",
+          "Curvature",
+          "Reference check"
+        ],
+        "title": "Lithium niobate photonics",
+        "url": "#/projects/photonics",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/hackerfab-zemax-paths.webp",
+            "width": 1920
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 9,
+        "tabs": [
+          "Optical paths",
+          "Objective proxy",
+          "Spot evaluation"
+        ],
+        "title": "HackerFab stepper",
+        "url": "#/projects/hackerfab",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/laser-requirements.webp",
+            "width": 1352
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [
+          "Original laser-driver power and thermal requirements",
+          "Electrical, thermal and control requirements"
+        ],
+        "title": "Laser diode current driver",
+        "url": "#/projects/laser-driver",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/fsd/poster.jpg",
+            "width": 1280
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 10,
+        "tabs": [],
+        "title": "FSD / camera perception",
+        "url": "#/projects/fsd",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [],
+        "title": "Astronomy in the cold",
+        "url": "#/projects/astronomy",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/bridge-load-test.webp",
+            "width": 960
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [
+          "Bifrost bridge in the physical load test",
+          "Matboard cutting layout",
+          "Bridge elevation and cross-section",
+          "Bridge failure during the physical test"
+        ],
+        "title": "The Bifr\u00f6st",
+        "url": "#/projects/bifrost",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": false,
+            "src": "/williamxu-portfolio/projects/evidence/can-morph-chart.webp",
+            "width": 0
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 8,
+        "tabs": [
+          "Original can-opening morphology chart",
+          "CAD concept for opening a can under water"
+        ],
+        "title": "A quieter can opening",
+        "url": "#/projects/can-opening",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": false,
+            "src": "/williamxu-portfolio/projects/evidence/jungle-approval-queue.webp",
+            "width": 0
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 4,
+        "tabs": [
+          "Jungle application approval queue"
+        ],
+        "title": "Jungle",
+        "url": "#/projects/jungle",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [],
+        "overflow": false,
+        "paragraphs": 3,
+        "tabs": [],
+        "title": "Wicker",
+        "url": "#/projects/wicker",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [
+          {
+            "complete": true,
+            "src": "/williamxu-portfolio/projects/evidence/looky-step-import.webp",
+            "width": 1024
+          }
+        ],
+        "overflow": false,
+        "paragraphs": 3,
+        "tabs": [
+          "STEP fixture rendered by Looky",
+          "3MF adapter fixture rendered by Looky"
+        ],
+        "title": "Looky",
+        "url": "#/projects/looky",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [],
+        "overflow": false,
+        "paragraphs": 3,
+        "tabs": [],
+        "title": "Newmux",
+        "url": "#/projects/newmux",
+        "width": 390
+      },
+      {
+        "canvasCount": 0,
+        "images": [],
+        "overflow": false,
+        "paragraphs": 2,
+        "tabs": [],
+        "title": "FrameGen",
+        "url": "#/projects/framegen",
+        "width": 390
+      }
+    ],
+    "interactions": {
+      "cellscopeHotspot": true,
+      "tabArrowKeys": true,
+      "tabHomeKey": true,
+      "fridayHotspot": true,
+      "designDecisionFocus": "decision-1",
+      "sandboxQualification": true,
+      "sceneCanvasCreated": true,
+      "sceneStartsPausedWithReducedMotion": true,
+      "explicitPlayback": true,
+      "sceneCanvasDisposed": true,
+      "sceneCloseRestoresFocus": true
+    },
+    "responsive": {
+      "desktop1440": true,
+      "mobile390": true,
+      "mobile320NoOverflow": true
+    }
+  },
+  "checks": {
+    "build": "passed",
+    "scopedLint": "passed",
+    "sceneTests": "3 passed",
+    "diffWhitespace": "passed"
+  },
+  "knownLimit": "Existing Three.js chunk exceeds the 500 kB advisory; it is loaded only when playback is activated."
+}

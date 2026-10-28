@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export default function FsdScene() {
+export default function FsdScene({ onAboutScene }) {
   const host = useRef(null), controller = useRef(null);
   const [status, setStatus] = useState('loading');
   const [paused, setPaused] = useState(() => window.matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('still'));
@@ -29,7 +29,7 @@ export default function FsdScene() {
     </div>
     <p className="sr-only" role="status">{status === 'loading' ? 'Loading the recorded FSD scene.' : status === 'ready' ? 'Recorded FSD scene ready.' : 'Showing a still image of the FSD scene.'}</p>
     <div className="scene-controls">
-      <a href="#scene-notes">About this scene</a>
+      {onAboutScene ? <button type="button" onClick={onAboutScene}>About this scene</button> : <a href="#/projects/fsd">About this scene</a>}
       <button type="button" onClick={() => setPaused(value => !value)} disabled={status !== 'ready'} aria-pressed={paused} aria-label={paused ? 'Play scene' : 'Pause scene'}>{paused ? 'Play' : 'Pause'}<span aria-hidden="true">{paused ? '▷' : 'Ⅱ'}</span></button>
     </div>
   </>;
