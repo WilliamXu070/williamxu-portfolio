@@ -1,6 +1,6 @@
 # William Xu — Engineering portfolio
 
-An image-led portfolio of optics, hardware, perception and software projects. The current draft uses Jane Koo's product compositions and Tiffany Tedy's interactive Cybertruck guide as design references. All project images are retained engineering evidence, with source credits and development-stage qualifications.
+A full-screen recorded FSD hero opens an image-led portfolio of optics, hardware, perception and software projects. The current draft uses Jane Koo's product compositions and Tiffany Tedy's interactive Cybertruck guide as design references. All project images are retained engineering evidence, with source credits and development-stage qualifications.
 
 ## Run and verify
 
@@ -19,7 +19,8 @@ Vite uses the `/williamxu-portfolio/` base path. The current entry point is `src
 - `src/content/projects.json`: the 16 first-person project accounts, source links and evidence captions.
 - `src/content/inspection.js`: image view labels and selectable engineering annotations. Point coordinates are percentages of the original image.
 - `src/components/EvidenceExplorer.jsx`: accessible image views, hotspots, captions, source credits and links to the matching design account. Tabs support arrow, Home and End keys; every hotspot also has a text button.
-- `src/components/PerceptionFeature.jsx`: user-activated FSD playback. The Three.js scene loads only after activation, respects reduced motion and is disposed when closed or when navigating away.
+- `src/components/FsdScene.jsx`: the full-screen animated homepage hero, with pause/play controls, a still-image fallback and reduced-motion support. Its Three.js module loads asynchronously and the canvas is disposed when navigating away.
+- `src/components/PerceptionFeature.jsx`: user-activated playback inside the FSD case study, with the same scene and cleanup behavior.
 - `public/projects/evidence/`: original curated project media and provenance.
 - `public/fsd/`: the recorded perception scene and its asset/dataset attribution.
 - `src/portfolio.css`: gallery, viewer, case-study and responsive styling.

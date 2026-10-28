@@ -342,7 +342,7 @@
           "Bridge elevation and cross-section",
           "Bridge failure during the physical test"
         ],
-        "title": "The Bifr\u00f6st",
+        "title": "The Bifröst",
         "url": "#/projects/bifrost",
         "width": 390
       },
@@ -458,5 +458,36 @@
     "sceneTests": "3 passed",
     "diffWhitespace": "passed"
   },
-  "knownLimit": "Existing Three.js chunk exceeds the 500 kB advisory; it is loaded only when playback is activated."
+  "knownLimit": "Existing Three.js chunk exceeds the 500 kB advisory; it is loaded only when playback is activated.",
+  "heroRestoration": {
+    "date": "2026-10-28",
+    "layout": "Full-screen original FSD scene followed directly by the existing interactive project gallery",
+    "viewportsChecked": [
+      "1440x1000",
+      "390x844",
+      "320x740"
+    ],
+    "horizontalOverflow": false,
+    "homepageCaseStudyLinks": 16,
+    "autoplayWithoutReducedMotion": true,
+    "recordedSceneAdvanced": "Observed recorded time advance from 1.341 to 1.881 seconds",
+    "pauseAndResumeVerified": true,
+    "reducedMotionStartsPaused": true,
+    "projectAnchorAtViewportTop": true,
+    "cellscopeResolutionTabLoadsOriginalImage": true,
+    "heroCanvasDisposedOnCaseNavigation": true,
+    "caseStudyPlaybackStillUserActivated": true,
+    "browserErrorsOrWarnings": [],
+    "validation": [
+      "Scoped ESLint passed",
+      "Three scene tests passed",
+      "Production build passed"
+    ],
+    "buildAdvisory": "Existing 583.22 kB Three.js chunk remains. The hero loads it asynchronously on homepage mount; case-study playback loads it on activation.",
+    "screenshots": [
+      "redesign-homepage-desktop.png",
+      "redesign-homepage-mobile.png",
+      "redesign-projects-under-hero-desktop.png"
+    ]
+  }
 }
