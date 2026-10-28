@@ -1,0 +1,185 @@
+{
+  "date": "2026-10-27",
+  "preview": "http://127.0.0.1:8876/williamxu-portfolio/",
+  "branch": "test/fsd-portfolio",
+  "checks": {
+    "production_build": "pass",
+    "scoped_eslint": "pass",
+    "existing_scene_tests": "3/3 pass",
+    "mobile_viewport": {
+      "width": 390,
+      "height": 844,
+      "document_width": 375
+    },
+    "desktop_viewport": {
+      "width": 1280,
+      "height": 720,
+      "document_width": 1265
+    },
+    "project_routes": [
+      {
+        "route": "#/projects/cellscope",
+        "title": "CellScope",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/waferwatch",
+        "title": "WaferWatch",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/friday",
+        "title": "FRIDAY",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/halo",
+        "title": "HALO",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/photonics",
+        "title": "Lithium niobate photonics",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/hackerfab",
+        "title": "HackerFab stepper",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/laser-driver",
+        "title": "Laser diode current driver",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/fsd",
+        "title": "FSD / camera perception",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/astronomy",
+        "title": "Astronomy in the cold",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/bifrost",
+        "title": "The Bifr\u00f6st",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/can-opening",
+        "title": "A quieter can opening",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/jungle",
+        "title": "Jungle",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/wicker",
+        "title": "Wicker",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/looky",
+        "title": "Looky",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/newmux",
+        "title": "Newmux",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      },
+      {
+        "route": "#/projects/framegen",
+        "title": "FrameGen",
+        "mobile_render": "pass",
+        "horizontal_overflow": false,
+        "retained_canvas_count": 0
+      }
+    ],
+    "project_section_navigation": "Pass: correct H2 focused and scrolled into view",
+    "return_to_home_anchors": "Pass: project index returned at 64 px desktop offset",
+    "console_warnings_errors": []
+  },
+  "screenshots": [
+    {
+      "file": "docs/organization-case-desktop.png",
+      "width": 1265,
+      "height": 3273,
+      "sha256": "1416fa8adb9106aaab470f31968d3ffae94155589bd8a59d9bf78773a0baf50c",
+      "capture": "Actual local browser screenshot; JPEG source encoded as PNG without visual changes."
+    },
+    {
+      "file": "docs/organization-case-mobile.png",
+      "width": 375,
+      "height": 3471,
+      "sha256": "0890755585f820c7dc1f290e4afb6fe9625c6b792e8d785c270f0193a7feac60",
+      "capture": "Actual local browser screenshot; JPEG source encoded as PNG without visual changes."
+    },
+    {
+      "file": "docs/organization-home-desktop.png",
+      "width": 1265,
+      "height": 6182,
+      "sha256": "4b26a8305bb167e4165ea472267d5ca6dfab3f44d2ac50a2dfb8bbf6711b4d18",
+      "capture": "Actual local browser screenshot; JPEG source encoded as PNG without visual changes."
+    },
+    {
+      "file": "docs/organization-home-mobile.png",
+      "width": 375,
+      "height": 8048,
+      "sha256": "cd30562462783bac33e56cdeb2f2477b7ce808ac45a30bd27a6b36c4206578f1",
+      "capture": "Actual local browser screenshot; JPEG source encoded as PNG without visual changes."
+    },
+    {
+      "file": "docs/organization-research.png",
+      "width": 1265,
+      "height": 712,
+      "sha256": "a063bc6db346b355b7fde3999ed7a2f7410e83169287fec96a1fb18cc37f3a46",
+      "capture": "Actual local browser screenshot; JPEG source encoded as PNG without visual changes."
+    },
+    {
+      "file": "docs/organization-selected-work.png",
+      "width": 1265,
+      "height": 712,
+      "sha256": "021e24b935a21ca5cab9dcb3c89b70da74c1efa4f77a9a44a472bee17ddb56af",
+      "capture": "Actual local browser screenshot; JPEG source encoded as PNG without visual changes."
+    }
+  ],
+  "limitations": [
+    "Schematics explain project structure; additional actual project screenshots, CAD and test imagery remain a future visual pass.",
+    "The existing lazily loaded Three.js renderer retains its build chunk-size warning."
+  ]
+}
