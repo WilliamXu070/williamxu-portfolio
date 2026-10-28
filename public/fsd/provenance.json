@@ -1,0 +1,53 @@
+{
+  "exportVersion": 1,
+  "scene": "scene-0927",
+  "checkpoint": "28d570f3688ce1dd0b2f52c59ae92568abfb1a0ca634147642e5c88139013b50",
+  "sourceExport": "4db2ee486b1718656b1674518ccaf23b0712b5f87568cc8bd88014f1c65e81fa",
+  "filters": "Existing FSD TemporalRoad and alignNextSurface, unchanged; actor display threshold 0.55.",
+  "atlasEncoding": "RGB = original filtered belief, support, coverage; no color conversion. Eight by five frames.",
+  "decodedAtlasSha256": {
+    "current": "47b5ad32bb1e6a5610410ec153c2f5773494199e3c24929afc7bcb9d66accd94",
+    "next": "c1c31998785b58fbb6f67d6f41a29855f609fb5f10e371cf135fa6318b031a68"
+  },
+  "sources": {
+    "simulator/runtime-scene.js": "5b18c9de1d6a153571a0e4996006279240877f3475c05becc0385b712c6799c9",
+    "simulator/temporal-surface.js": "bf8c7dbd88189e02e60e869da4e6da76bb16e229d276227947dc6123125354e8",
+    "simulator/temporal-road.mjs": "1b541da3a5d49730930eba288c42769c6cabaa80ce0efc199248a207cd0e179d",
+    "simulator/replay-interpolation.mjs": "030161a0a1b4d7801b324e6253245c804bff7e025150cae09a8b51d1d346d401",
+    "simulator/presentation-ground.mjs": "4981bfad7bc17e8c43c829a25f7b36b958d83e5a2dbb6adb91863b68c1198291"
+  },
+  "files": {
+    "cybertruck.glb": {
+      "sha256": "d83d7746e1007fe36a989462439e208a00adde69755f09482c1bb6c0de35568d",
+      "bytes": 4295152
+    },
+    "detected-car.glb": {
+      "sha256": "b9216899fb02182232769e473f1da51ece51a4bd5839951f7518d94afbdc88dd",
+      "bytes": 126424
+    },
+    "detected-human.glb": {
+      "sha256": "1a2dad8ac916332885bed83e96e85b44a4a2ee2e8289a4cabf926b7c5aeb8dae",
+      "bytes": 73748
+    },
+    "manifest.json": {
+      "sha256": "5450e38ca18521003a0c13ac5422c833b3582622d27adedf5bc0510044eda4c1",
+      "bytes": 1907
+    },
+    "surfaces.png": {
+      "sha256": "5a08defc80609ad95b996d9d2f288dff0b80a9227bc0ed8b15d5b4596f250665",
+      "bytes": 942373
+    },
+    "surfaces-next.png": {
+      "sha256": "d4ab2a4e97a8020dbde0e57d92b67a1cf6d4114fcb2387deb867b39f75b37108",
+      "bytes": 992078
+    },
+    "recording.json": {
+      "sha256": "ec224981a8f4b4c805614621bb19683a951b8c6c8d5553101e5bf3727973f42b",
+      "bytes": 21079
+    },
+    "poster.jpg": {
+      "sha256": "7fb28d0e37653f4bc92fe12663cf83089f3a2f83164506536a5882a73ad1101f",
+      "bytes": 15105
+    }
+  }
+}

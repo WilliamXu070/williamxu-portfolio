@@ -1,0 +1,23 @@
+{
+  "branch": "test/fsd-portfolio",
+  "verified": [
+    "Production Vite build under /williamxu-portfolio/",
+    "ESLint passed for experiment components and scene code",
+    "Three recording/playback/asset integrity tests passed",
+    "Both decoded surface atlases match source channel hashes",
+    "Browser loaded actual Cybertruck and semantic surfaces without errors",
+    "Playback crossed the source loop boundary",
+    "Reduced-motion preference paused playback",
+    "Keyboard opened project notes",
+    "390px mobile viewport had no horizontal overflow"
+  ],
+  "observations": {
+    "loop_counter": 1,
+    "time_after_loop": "7.946",
+    "mobile_client_width": 375,
+    "mobile_document_width": 375,
+    "browser_scene_ready": true,
+    "reduced_motion_paused": true
+  },
+  "scope": "Recorded replay; no live inference or infinitely generated environment. Production Pages branch is not deployed by the test workflow."
+}

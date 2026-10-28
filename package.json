@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint:experiment": "eslint src/PortfolioExperiment.jsx src/components/FsdScene.jsx src/scene/*.js src/scene/*.mjs",
+    "test:scene": "node --test tests/fsd-recording.test.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",
