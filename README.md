@@ -1,6 +1,6 @@
 # William Xu — Engineering portfolio
 
-A full-screen recorded FSD hero opens an image-led portfolio of optics, hardware, perception and software projects. The current draft uses Jane Koo's product compositions and Tiffany Tedy's interactive Cybertruck guide as design references. All project images are retained engineering evidence, with source credits and development-stage qualifications.
+A full-screen recorded FSD hero opens an image-led portfolio of optics, hardware, perception and software projects. The project gallery uses unequal image sizes and staggered placement, informed by Gonzalo Morales and Christine Liang. Jane Koo's product compositions and Tiffany Tedy's interactive Cybertruck guide remain references for the opening and detailed case studies. All project images are retained engineering evidence, with source credits and development-stage qualifications.
 
 ## Run and verify
 
@@ -23,7 +23,8 @@ Vite uses the `/williamxu-portfolio/` base path. The current entry point is `src
 - `src/components/PerceptionFeature.jsx`: user-activated playback inside the FSD case study, with the same scene and cleanup behavior.
 - `public/projects/evidence/`: original curated project media and provenance.
 - `public/fsd/`: the recorded perception scene and its asset/dataset attribution.
-- `src/portfolio.css`: gallery, viewer, case-study and responsive styling.
+- `src/components/HomeProjects.jsx` and `src/home-projects.css`: the staggered project gallery, full-width FRIDAY feature and compact project archive.
+- `src/portfolio.css`: hero, viewer and case-study styling.
 
 ## Review status
 
@@ -32,6 +33,9 @@ Branch `test/fsd-portfolio` is a draft review branch. Its GitHub workflow valida
 See `docs/tesla-composition-redesign.md` for the design rationale and `docs/redesign-verification.json` for the verification record. Earlier design documents and screenshots describe historical iterations.
 
 ## References
+
+- [Gonzalo Morales](https://gmoral.es/): varied project scale and staggered composition.
+- [Christine Liang](https://www.christineliangdesign.com/): evidence-led project images and concise contribution captions.
 
 - [Jane Koo](https://janekoo.design/): large product compositions, image treatment and restrained navigation.
 - [Tiffany Tedy's Cybertruck guide](https://www.tifftedy.com/work/tesla-cybertruck): selecting components to understand a system.

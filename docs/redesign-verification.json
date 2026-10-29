@@ -342,7 +342,7 @@
           "Bridge elevation and cross-section",
           "Bridge failure during the physical test"
         ],
-        "title": "The Bifröst",
+        "title": "The Bifr\u00f6st",
         "url": "#/projects/bifrost",
         "width": 390
       },
@@ -489,5 +489,42 @@
       "redesign-homepage-mobile.png",
       "redesign-projects-under-hero-desktop.png"
     ]
+  },
+  "projectComposition": {
+    "date": "2026-10-29",
+    "layout": "Staggered optics pair, full-width FRIDAY, offset fabrication pair, compact archive",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1200
+      },
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 320,
+        "height": 780
+      }
+    ],
+    "horizontalOverflow": false,
+    "mainImagesLoaded": 5,
+    "archiveThumbnailsLoaded": 6,
+    "distinctProjectLinks": 16,
+    "caseStudyInteraction": "FRIDAY image link, Sandbox checkout tab and All work return",
+    "hero": {
+      "playback": true,
+      "pause": true,
+      "reducedMotionPaused": true
+    },
+    "capturedConsoleErrors": [],
+    "originalContentUnchanged": true,
+    "projectContentSha256": "4a7fa5e87fef37458f6f3ebdc13f49f1814dde67ded85b374bf4caef7710a023",
+    "checks": [
+      "npm run lint:experiment",
+      "npm run build"
+    ],
+    "buildWarning": "Existing asynchronous Three.js scene chunk exceeds 500 kB",
+    "productionDeployed": false
   }
 }

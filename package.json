@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "lint:experiment": "eslint src/PortfolioExperiment.jsx src/components/FsdScene.jsx src/components/ProjectArtwork.jsx src/components/ProjectPage.jsx src/components/EvidenceExplorer.jsx src/components/PerceptionFeature.jsx src/content/inspection.js src/scene/*.js src/scene/*.mjs",
+    "lint:experiment": "eslint src/PortfolioExperiment.jsx src/components/HomeProjects.jsx src/components/FsdScene.jsx src/components/ProjectArtwork.jsx src/components/ProjectPage.jsx src/components/EvidenceExplorer.jsx src/components/PerceptionFeature.jsx src/content/inspection.js src/scene/*.js src/scene/*.mjs",
     "test:scene": "node --test tests/fsd-recording.test.mjs"
   },
   "dependencies": {
