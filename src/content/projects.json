@@ -1,0 +1,1033 @@
+[
+  {
+    "slug": "cellscope",
+    "title": "CellScope",
+    "category": "Optics & imaging",
+    "status": "Research prototype",
+    "summary": "A cellphone microscope, from the optical system to the reconstructed image.",
+    "art": "image",
+    "flow": [
+      "Angular illumination",
+      "Image acquisition",
+      "Phase retrieval"
+    ],
+    "links": [
+      {
+        "label": "2024 research abstract",
+        "url": "https://abstracts.societyforscience.org/Home/FullAbstract?ProjectId=25699"
+      },
+      {
+        "label": "IEEE publication",
+        "url": "https://ieeexplore.ieee.org/document/10937550"
+      },
+      {
+        "label": "Prototype demo",
+        "url": "https://www.youtube.com/watch?v=tLPIJqOXb9w"
+      }
+    ],
+    "role": "Founder and optical systems engineer • Computational imaging and optomechanical design",
+    "intro": [
+      "I started CellScope after working with microscopes in my high school biology lab that were outdated and expensive. I wanted to make useful microscopy accessible with equipment people already had. A cellphone was a practical starting point because it provided a camera, display and computing platform in one device.",
+      "The phone camera could not provide the imaging performance on its own. I combined it with compact optics and Fourier ptychography, which reconstructs a higher-resolution image from measurements taken under different illumination angles. I implemented the reconstruction in Python, linking the physical acquisition process to the image the user ultimately sees."
+    ],
+    "sections": [
+      {
+        "title": "Requirements and design decisions",
+        "paragraphs": [
+          "Cost was one requirement, but it had to be considered alongside resolution, field of view and acquisition time. A small high-resolution image would limit how much of a specimen someone could inspect. A long acquisition would make the instrument less useful for changing samples. The design needed to balance those requirements across the optics, illumination and reconstruction.",
+          "I used angular illumination to collect different spatial-frequency information from the sample. The reconstruction depends on those measurements agreeing with the optical model, so illumination geometry, focus and consistency across the sequence matter. Computation extends what the captured data can reveal; it does not remove the need for a stable, well-characterized instrument.",
+          "In the later mechanical design, the phone and optics remain stationary while the lightweight sample stage moves for focus. That reduces the mass the focus mechanism has to control. I also included X–Y positioning and a stage that extends beyond the housing for slide loading. The tradeoff is that the moving stage must provide access while returning to a usable imaging position within the short working distance.",
+          "These decisions build on each other. Choosing a phone made the system accessible, but introduced optical limitations. Reconstruction addressed part of that limitation, which made acquisition consistency and mechanical stability more important. I had to design the instrument as a connected system."
+        ]
+      },
+      {
+        "title": "Results",
+        "paragraphs": [
+          "The prototype reported in my 2024 ISEF abstract achieved **2.2 µm resolution across a 2.01 mm² field of view**, with **0.6 seconds of dataset acquisition**, at a cost below C$200. That timing describes collecting the images used for reconstruction. It is not the full processing time.",
+          "The project took me to ISEF 2024 and led to a publication on cellphone-based Fourier ptychography through IEEE. Those results describe the research prototype. The later mechanical design is a separate iteration focused on how someone loads, positions and focuses a sample."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/cellscope-prototype.webp",
+      "thumbnail": "projects/evidence/cellscope-prototype-thumb.webp",
+      "width": 1864,
+      "height": 1462,
+      "title": "CellScope research prototype",
+      "alt": "CellScope research prototype",
+      "caption": "The physical cellphone microscope: phone and imaging optics above the sample, with the programmable illumination array below.",
+      "kind": "Prototype photograph",
+      "source": "William Xu · ISEF project archive",
+      "fit": "cover"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/cellscope-acquisition.webp",
+        "thumbnail": "projects/evidence/cellscope-acquisition-thumb.webp",
+        "width": 457,
+        "height": 459,
+        "title": "Phone, sample and illumination array",
+        "alt": "Phone, sample and illumination array",
+        "caption": "The acquisition setup used for the research prototype. Keeping the sample and illumination aligned matters across the image sequence.",
+        "kind": "Prototype photograph",
+        "source": "William Xu · ISEF project archive",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/cellscope-resolution.webp",
+        "thumbnail": "projects/evidence/cellscope-resolution-thumb.webp",
+        "width": 2200,
+        "height": 1562,
+        "title": "Raw image, reconstructed amplitude and microscope reference",
+        "alt": "Raw image, reconstructed amplitude and microscope reference",
+        "caption": "My original resolution-target comparison: raw cellphone data, Fourier-ptychographic reconstruction and a 40× tabletop-microscope reference. The reference is a separate instrument.",
+        "kind": "Experimental comparison",
+        "source": "William Xu · ISEF presentation figure",
+        "fit": "contain",
+        "section": 1
+      },
+      {
+        "src": "projects/evidence/cellscope-field-of-view.webp",
+        "thumbnail": "projects/evidence/cellscope-field-of-view-thumb.webp",
+        "width": 2200,
+        "height": 1635,
+        "title": "Cell sample: raw data, reconstructed amplitude and phase",
+        "alt": "Cell sample: raw data, reconstructed amplitude and phase",
+        "caption": "The original field-of-view figure shows the captured sample and the reconstructed amplitude and phase, including enlarged regions for inspection.",
+        "kind": "Experimental comparison",
+        "source": "William Xu · ISEF presentation figure",
+        "fit": "contain",
+        "section": 1
+      }
+    ]
+  },
+  {
+    "slug": "waferwatch",
+    "title": "WaferWatch",
+    "category": "Fabrication software",
+    "status": "Implemented application",
+    "summary": "Follow the fabrication process. Trace a result back through the steps that produced it.",
+    "art": "wafer",
+    "flow": [
+      "Process plan",
+      "Wafer history",
+      "Measurements"
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/WilliamXu070/WaferWatch"
+      },
+      {
+        "label": "Domain requirements",
+        "url": "https://github.com/WilliamXu070/WaferWatch/blob/main/agents.md"
+      }
+    ],
+    "role": "Concept, product design and full implementation • Fabrication workflow software",
+    "intro": [
+      "I conceived and built WaferWatch because I wanted an accessible, transparent way to understand the entire fabrication pipeline. When a problem appears in a wafer or die, the result alone does not explain where the mistake happened. I wanted researchers to be able to follow the chain of work, inspect the relevant steps and investigate where an error may have entered the process.",
+      "I owned the project from the idea through the interface, application logic and implementation. WaferWatch brings process plans, wafer and die movement, checkpoints, parameters, inspections and scheduling into a shared application built with Next.js, TypeScript, Supabase and PostgreSQL."
+    ],
+    "sections": [
+      {
+        "title": "Making the process understandable",
+        "paragraphs": [
+          "The interface needed to work at two levels. Researchers need an overview of the full process, but they also need to inspect what happened to one particular wafer or die. I organized the application around a process view connected to individual histories, so the overview and the underlying evidence remain part of the same workflow.",
+          "The most important data-model decision was to keep the intended process separate from its actual execution. A published plan describes what should happen. An operation run records a particular instance of that work. If a step is repeated, or work splits into separate paths, it receives a distinct linked identity instead of overwriting the previous visit.",
+          "That costs more schema and transition logic than storing a single current status. It also preserves the information needed to compare conditions before and after a problem. A correction should make the record more accurate without making the original event disappear, so checkpoint history is append-only and corrections supersede earlier evidence."
+        ]
+      },
+      {
+        "title": "Keeping the record consistent",
+        "paragraphs": [
+          "I kept movement eligibility on the server. A connection drawn in the interface describes the process, but it is not enough to authorize a change. Server actions, project permissions, revision checks and idempotency protections keep duplicate or out-of-order requests from silently changing the history.",
+          "The process view, planning views and wafer status use shared projections of the same underlying work. Realtime updates carry ordered changes, with a new snapshot when a client has missed part of the retained history. This makes collaboration a data-consistency problem as well as an interface problem."
+        ]
+      },
+      {
+        "title": "Result",
+        "paragraphs": [
+          "The result is an implemented application for following fabrication work and inspecting the evidence around individual steps. I also built verification mechanisms for lifecycle transitions, checkpoints, permissions, collaboration and data migrations. The system supports investigating where an error occurred; identifying the actual cause still depends on the measurements and process evidence. Its core contribution is making that history accessible without losing the details needed to investigate it."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/waferwatch-prototype.webp",
+      "thumbnail": "projects/evidence/waferwatch-prototype-thumb.webp",
+      "width": 1728,
+      "height": 997,
+      "title": "WaferWatch wafer and die visualizer",
+      "alt": "WaferWatch wafer and die visualizer",
+      "caption": "An earlier working prototype showing the wafer, selectable dies and process stages. The current process-history application described below is a later iteration.",
+      "kind": "Application screenshot",
+      "source": "William Xu · WaferWatch repository",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/WilliamXu070/WaferWatch/blob/main/wafer-post-dice-playwright.png"
+    },
+    "evidence": []
+  },
+  {
+    "slug": "friday",
+    "title": "FRIDAY",
+    "category": "Spatial computing",
+    "status": "Team hackathon project",
+    "summary": "Scan a room, arrange it with an agent, and keep the design grounded in the space.",
+    "art": "room",
+    "flow": [
+      "Room reconstruction",
+      "Editable scene",
+      "Bounded agent tools"
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/LeeSinLiang/FRIDAY"
+      },
+      {
+        "label": "Architecture",
+        "url": "https://github.com/LeeSinLiang/FRIDAY/blob/main/docs/architecture/system.md"
+      },
+      {
+        "label": "Team project record",
+        "url": "https://www.sinlianglee.com/projects/friday"
+      }
+    ],
+    "role": "3D environment development lead • Room scanning, agent constraints, UI and commerce integration",
+    "intro": [
+      "FRIDAY began at HackMIT as a way to design a room with an AI agent in a shared 3D environment. I led development of the environment and worked on adapting the visual-odometry and reconstruction system for room scanning. I wanted people to use their own spaces, making the experience accessible beyond rooms we had prepared ourselves.",
+      "I also helped constrain the agent system and its domain-specific language, worked on the website UI, and contributed to the Visa Intelligent Commerce integration and transaction pipeline. It was a team effort connecting scanned spaces to products users could inspect and arrange."
+    ],
+    "sections": [
+      {
+        "title": "A room needs more than a convincing image",
+        "paragraphs": [
+          "The environment combines room meshes or Gaussian splats with editable furniture. A reconstruction can look convincing while its scale or boundaries are unsuitable for reliable placement. The application needs dimensions, orientation and support relationships to determine where an item can fit.",
+          "Accessible capture creates a tradeoff with calibration. Phone video is easy to obtain, but the result still needs usable spatial information. The phone-video reconstruction path remains experimental, with manual integration. The active editor uses PlayCanvas to render rooms and manipulate furniture."
+        ]
+      },
+      {
+        "title": "Constraining the agent",
+        "paragraphs": [
+          "The agent needed to operate within both product constraints and spatial constraints. A request can include a budget, material, dimensions or relationships between items. I helped define those requirements so they could be represented explicitly instead of existing only in a prompt.",
+          "Natural-language search is compiled into a validated constraint language for deterministic filtering. Scene changes are staged and checked against geometry and revision state before being committed. The agent can inspect the scene and request screenshots tied to a particular revision, which helps keep its reasoning connected to the room the user is actually editing."
+        ]
+      },
+      {
+        "title": "Connecting a design to products",
+        "paragraphs": [
+          "My commerce work addressed how companies or communities could expose their products as 3D models in the same environment. Product identity has to remain consistent from the model and catalogue listing through the selected design and cart. The checkout path uses an immutable snapshot, explicit approval and MFA before Visa sandbox submission.",
+          "The implementation includes catalogue discovery, editable arrangements and a transaction path ending at a sandbox receipt. Together, these support the goal of evaluating a design in someone’s own space and understanding the products being selected."
+        ]
+      },
+      {
+        "title": "Result",
+        "paragraphs": [
+          "Our team finished **Top 12 overall and third in the OpenAI 5th Teammate Challenge at HackMIT 2026**. FRIDAY brought together an interactive room editor, bounded agent tools and a product workflow that users could compare and revise."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/friday-room-editor.webp",
+      "thumbnail": "projects/evidence/friday-room-editor-thumb.webp",
+      "width": 2200,
+      "height": 1224,
+      "title": "FRIDAY room editor with furniture and design alternatives",
+      "alt": "FRIDAY room editor with furniture and design alternatives",
+      "caption": "The team’s room editor with placed furniture, three candidate designs and an explicit budget. I led the 3D environment integration and contributed to the agent constraints, UI and commerce path. The room is a licensed demo scene, not a scan I captured.",
+      "kind": "Application screenshot",
+      "source": "FRIDAY team · repository demo",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/LeeSinLiang/FRIDAY/blob/main/docs/assets/friday-room-design.png",
+      "credit": {
+        "label": "Room asset: HAUSSMANN APARTMENT by Stéphane Agullo (sa3d)",
+        "url": "https://superspl.at/scene/4de797f4",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/friday-sandbox-checkout.webp",
+        "thumbnail": "projects/evidence/friday-sandbox-checkout-thumb.webp",
+        "width": 2100,
+        "height": 1360,
+        "title": "FRIDAY cart and accepted Visa IDX sandbox request",
+        "alt": "FRIDAY cart and accepted Visa IDX sandbox request",
+        "caption": "A frame from our HackMIT recording connects selected products to the cart and an accepted Visa IDX sandbox request. This did not authorize payment or create a vendor order. Browser chrome, account details and response identifiers are cropped out.",
+        "kind": "Recorded application demo",
+        "source": "FRIDAY team · 20 September 2026 demo, 00:25",
+        "fit": "contain",
+        "section": 2
+      }
+    ]
+  },
+  {
+    "slug": "halo",
+    "title": "HALO",
+    "category": "Edge AI & Android",
+    "status": "Team prototype",
+    "summary": "Connecting wearable data and local inference on a real phone.",
+    "art": "phone",
+    "flow": [
+      "Wearable records",
+      "Local context",
+      "On-device inference"
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/dadisudhir/HALO"
+      },
+      {
+        "label": "Inference implementation",
+        "url": "https://github.com/dadisudhir/HALO/blob/main/app/src/main/java/com/health/secondbrain/llm/OnDeviceLlmService.kt"
+      }
+    ],
+    "role": "Wearable integration, edge inference and clinical-record connection • Android prototype",
+    "intro": [
+      "My work on HALO connected wearable data, on-device inference and hospital information. The goal was to give an assistant useful health context on a phone, where someone could see their data and ask questions without treating every reading as an isolated number.",
+      "I worked on the integration between the data and model paths. The Android application uses Kotlin and Jetpack Compose, local storage, Health Connect and an ExecuTorch/Qualcomm QNN model path. I integrated and debugged the application on a Samsung S25 Ultra."
+    ],
+    "sections": [
+      {
+        "title": "Combining records with different meanings",
+        "paragraphs": [
+          "A wearable reading and a clinical record are not interchangeable. They may describe different time periods, have different units or arrive at different rates. The system needs to distinguish a recent measurement from a historical observation, and missing data from a normal result.",
+          "The wearable path includes Health Connect permissions and record queries. For clinical information, the FHIR connection reads Patient, Observation and Condition resources. The prototype’s FHIR configuration targets a demo server, so this work demonstrates the integration path rather than a deployed connection to a hospital’s live records.",
+          "That separation matters to the interface as well. An answer should remain connected to the data available for that person and time period. Combining sources is only useful when the application retains enough context to explain what it is using."
+        ]
+      },
+      {
+        "title": "Working within the phone",
+        "paragraphs": [
+          "On-device inference introduced a different set of constraints from calling a hosted model. Prompt size, generated output and concurrent requests all affect memory use and responsiveness. The local service bounds the prompt and response, serializes generation with a mutex and loads the model through ExecuTorch/QNN.",
+          "I also had to account for incomplete context and failures. The service includes cleanup and fallback paths for missing data, invalid output and inference errors. A fallback is a different outcome from a model-generated answer, and the application needs to preserve that distinction.",
+          "Local generation does not mean the whole application is offline. Imported clinical records and external tool requests have their own boundaries. I treat the location of inference, data retrieval and tool execution as separate parts of the architecture."
+        ]
+      },
+      {
+        "title": "Result",
+        "paragraphs": [
+          "HALO became an Android prototype bringing wearable and clinical-data paths into a shared application with a local inference implementation. My work included real-device integration and debugging across the model, data and UI paths. The prototype establishes those engineering connections, with clinical-record access configured against a demo server."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/halo-model-loader.webp",
+      "thumbnail": "projects/evidence/halo-model-loader-thumb.webp",
+      "width": 910,
+      "height": 398,
+      "title": "HALO local model loading and failure cleanup",
+      "alt": "HALO local model loading and failure cleanup",
+      "caption": "The actual Kotlin model-loading path: check the model and tokenizer, bootstrap Qualcomm QNN, load the ExecuTorch module and clean up on failure. This is implementation evidence; it is not a phone UI capture or a latency benchmark.",
+      "kind": "Implementation excerpt",
+      "source": "HALO team repository · OnDeviceLlmService.kt, lines 1344–1363",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/dadisudhir/HALO/blob/6c490a9c2c461c0dc3fde7782479b7d374f34de4/app/src/main/java/com/health/secondbrain/llm/OnDeviceLlmService.kt#L1344-L1363"
+    },
+    "evidence": []
+  },
+  {
+    "slug": "photonics",
+    "title": "Lithium niobate photonics",
+    "category": "Photonic devices",
+    "status": "Simulation research",
+    "summary": "Waveguide-bend design tied to a fabrication platform and a fair simulation comparison.",
+    "art": "waveguide",
+    "flow": [
+      "Material stack",
+      "Waveguide geometry",
+      "Matched simulation"
+    ],
+    "links": [],
+    "role": "Undergraduate photonics research • Waveguide geometry and simulation workflow",
+    "intro": [
+      "In my photonics work at McMaster, I’ve worked on lithium niobate waveguide design using Ansys Lumerical and LumOpt. The bend study connects optical simulation to a specific fabrication platform. The geometry needs to represent the material stack and etch profile that the device could actually have.",
+      "The active configuration uses X-cut lithium niobate at a wavelength of 1550 nm, with a 600 nm film, a 300 nm etch and an 800 nm waveguide top width. The model includes 70-degree sidewalls and a 4.7 µm buried-oxide layer. Those dimensions constrain the design rather than serving as details added after optimization."
+    ],
+    "sections": [
+      {
+        "title": "Representing the fabricated cross section",
+        "paragraphs": [
+          "An etched ridge has a trapezoidal cross section, so the top and bottom widths are different. I used the etch depth and sidewall angle to define that shape consistently. Modeling an ideal rectangular core would change the confinement and could make an optimization result less representative of the intended device.",
+          "Lithium niobate is also anisotropic. The crystal orientation and propagation direction affect the material response seen by a mode. The simulation therefore needs a consistent relationship between the index tensor, geometry and mode convention. A bend changes the propagation direction, which makes those conventions especially important."
+        ]
+      },
+      {
+        "title": "Balancing design freedom and simulation cost",
+        "paragraphs": [
+          "The implemented optimization path uses three-dimensional finite-difference time-domain simulation with LumOpt. It can evaluate the full geometry, but that comes with substantial computational cost. The project also defines a proposed faster stage using mode solving and eigenmode expansion; that remains separate from the active FDTD path.",
+          "A more compact or more complicated bend is only useful if it improves the relevant optical result under a fair comparison. Ports, modes, normalization, mesh treatment and boundaries need to remain consistent between the baseline and candidate. The 20 nm design-mesh setting is an input to that comparison, not evidence that it has converged."
+        ]
+      },
+      {
+        "title": "Result and current stage",
+        "paragraphs": [
+          "The work has produced a fabrication-aware model and an implemented workflow for exploring waveguide-bend designs. It also connects to fabrication-support documents and layout work. At this stage, the optical results are simulation results, and a measured device result would require fabrication and optical characterization.",
+          "The main engineering outcome is a design process tied to a defined platform. It makes the assumptions explicit enough that a candidate geometry can be evaluated against the same physical and numerical conditions as its reference."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/photonics-bend-volume.webp",
+      "thumbnail": "projects/evidence/photonics-bend-volume-thumb.webp",
+      "width": 2200,
+      "height": 1100,
+      "title": "Lithium niobate bend geometry and simulation regions",
+      "alt": "Lithium niobate bend geometry and simulation regions",
+      "caption": "An archived bend iteration showing the 3D core, input/output guides, source, monitor and simulation regions. Its 1.83 µm width and 1 µm height belong to that earlier configuration; the active fabrication stack is described below. This is a geometry visualization, not an optical-field or transmission result.",
+      "kind": "Geometry study",
+      "source": "William Xu · Lumerical/LumOpt project archive",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/photonics-polygon-joins.webp",
+        "thumbnail": "projects/evidence/photonics-polygon-joins-thumb.webp",
+        "width": 2200,
+        "height": 846,
+        "title": "Input and output polygon joins",
+        "alt": "Input and output polygon joins",
+        "caption": "A geometry diagnostic from the 50 µm bend study, inspecting where the bend meets the straight guides. The visible joins are part of checking the model before interpreting optical results.",
+        "kind": "Geometry diagnostic",
+        "source": "William Xu · bend parameterization archive",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/photonics-parameterization.webp",
+        "thumbnail": "projects/evidence/photonics-parameterization-thumb.webp",
+        "width": 2200,
+        "height": 1646,
+        "title": "Centerline, curvature and parameter knots",
+        "alt": "Centerline, curvature and parameter knots",
+        "caption": "An earlier parameterization diagnostic: bend shape, curvature along arc length, its numerical derivative and the segment knots. These plots describe the geometry supplied to the solver.",
+        "kind": "Parameterization diagnostic",
+        "source": "William Xu · simulation archive",
+        "fit": "contain",
+        "section": 1
+      },
+      {
+        "src": "projects/evidence/photonics-euler-reconstruction.webp",
+        "thumbnail": "projects/evidence/photonics-euler-reconstruction-thumb.webp",
+        "width": 1680,
+        "height": 900,
+        "title": "Generalized Euler seed reconstruction comparison",
+        "alt": "Generalized Euler seed reconstruction comparison",
+        "caption": "A reconstruction check against the reference-paper seed data. This comparison checks the recreated geometry; it is not a new measured device result.",
+        "kind": "Reference reconstruction",
+        "source": "William Xu · paper-reconstruction tools",
+        "fit": "contain",
+        "section": 2
+      }
+    ]
+  },
+  {
+    "slug": "hackerfab",
+    "title": "HackerFab stepper",
+    "category": "Optics & motion",
+    "status": "Design study",
+    "summary": "Working through the illumination, focus and motion requirements of maskless lithography.",
+    "art": "stepper",
+    "flow": [
+      "DMD illumination",
+      "Reduction optics",
+      "Sample positioning"
+    ],
+    "links": [],
+    "role": "Stepper design and refactoring • Optical design study",
+    "intro": [
+      "My HackerFab work covers lithography stepper design and refactoring. The stepper study explores maskless pattern transfer using a digital micromirror device and reduction optics. I’m working through how the illumination, projected pattern and positioning system fit together, with the optical requirements informing the mechanical ones.",
+      "The studied configuration uses 410 nm illumination, a DLP471TP and a 10× objective with numerical aperture 0.25. It gives a calculated projected field of approximately 1.04 × 0.58 mm and a projected pixel pitch of about 0.54 µm."
+    ],
+    "sections": [
+      {
+        "title": "Sampling and resolution",
+        "paragraphs": [
+          "One important distinction is that projected pixel size is not the same as printable feature size. The optical study estimates an Airy diameter of roughly 2 µm. Smaller projected pixels can sample that response, but they do not remove diffraction, aberration or the effect of the resist process.",
+          "I therefore treat the projected grid, optical response and resulting resist pattern as separate parts of the design. A useful exposure system needs all three to agree, and the final feature size has to be established with a process test."
+        ]
+      },
+      {
+        "title": "Throughput and focus tolerance",
+        "paragraphs": [
+          "Reduction also affects how much light reaches the sample. With the assumed illumination cone and numerical aperture, the study estimates that only about 0.8–1.1% of that cone is accepted. This ties the optical layout to dose and exposure time. A choice that gives a smaller projected field can make the illumination problem harder.",
+          "The estimated depth of focus is approximately ±3.3 µm. That is a mechanical requirement as well as an optical quantity: substrate tilt, stage flatness and Z motion all use part of the available focus tolerance. Positioning between exposures adds another constraint, because nominal motor resolution does not establish repeatability or account for backlash.",
+          "The tradeoff is between field size, optical detail, available dose and positioning difficulty. Optimizing one number in isolation would hide the requirements placed on the rest of the system."
+        ]
+      },
+      {
+        "title": "Result and current stage",
+        "paragraphs": [
+          "My contribution includes the stepper design work and refactoring. The optical study makes the design assumptions and calculated limits explicit, giving the build a basis for discussing illumination, focus and motion requirements.",
+          "The values above are calculated design quantities. They are not measured resist resolution or demonstrated positioning accuracy. The next experimental stage is to connect the optical model to field-uniformity measurements, focus sweeps, printed patterns and repeated stage motion."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/hackerfab-zemax-paths.webp",
+      "thumbnail": "projects/evidence/hackerfab-zemax-paths-thumb.webp",
+      "width": 1920,
+      "height": 1040,
+      "title": "Native Zemax model of exposure and camera paths",
+      "alt": "Native Zemax model of exposure and camera paths",
+      "caption": "My native OpticStudio study of the shared stepper optics: violet exposure rays and the red camera branch. The objective uses a published Olympus prescription as a proxy; it is not the commercial objective’s internal prescription.",
+      "kind": "Native Zemax capture",
+      "source": "William Xu · optics-only study, September 2026",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/hackerfab-objective-proxy.webp",
+        "thumbnail": "projects/evidence/hackerfab-objective-proxy-thumb.webp",
+        "width": 1138,
+        "height": 878,
+        "title": "Curved objective prescription in OpticStudio",
+        "alt": "Curved objective prescription in OpticStudio",
+        "caption": "The imported seven-element objective proxy, inspected as curved glass in the native model. It establishes a traceable model for evaluation, with the commercial objective’s internal prescription still unknown.",
+        "kind": "Native Zemax capture",
+        "source": "William Xu · published-prescription proxy study",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/hackerfab-exposure-spots.webp",
+        "thumbnail": "projects/evidence/hackerfab-exposure-spots-thumb.webp",
+        "width": 600,
+        "height": 573,
+        "title": "Exposure-path spot diagram at the reference spacing",
+        "alt": "Exposure-path spot diagram at the reference spacing",
+        "caption": "The exposure-path check did not pass at the preserved reference spacing. Missing accepted edge-field spots are not zero aberration. This result identifies an optical problem to resolve before claiming printable resolution.",
+        "kind": "Optical evaluation",
+        "source": "William Xu · native OpticStudio spot analysis",
+        "fit": "contain",
+        "section": 2
+      }
+    ]
+  },
+  {
+    "slug": "laser-driver",
+    "title": "Laser diode current driver",
+    "category": "Electronics",
+    "status": "Architecture study",
+    "summary": "Choosing a first-board architecture around current quality, heat and independent protection.",
+    "art": "system",
+    "flow": [
+      "Current command",
+      "Power stage",
+      "Independent protection"
+    ],
+    "links": [],
+    "role": "Architecture design study • Current control, protection and thermal design",
+    "intro": [
+      "I developed an architecture study for an adjustable laser-diode current source powered from an existing 12 V supply. The documented operating range is 0–3.5 A, with independent protection below the diode’s 4 A absolute limit. The problem was to choose a practical first-board architecture while balancing current quality, heat, cost and control complexity.",
+      "I compared a direct synchronous buck driver with a switching preregulator followed by a precision linear stage. The hybrid architecture offered a route to quieter current, but added dissipation and another control loop. The comparison recommended a TPS92640 direct-buck design for the first board, with a bypassable linear post-stage available for comparison."
+    ],
+    "sections": [
+      {
+        "title": "Current quality and thermal design",
+        "paragraphs": [
+          "I considered ripple and drift separately. Switching behavior and layout affect short-timescale variation. Reference stability, shunt temperature and thermal coupling affect slower changes. Improving one does not necessarily improve the other, so the architecture needs a clear measurement path as well as a current command.",
+          "The proposed control path uses a 16-bit DAC, a precision reference, a low-temperature-coefficient Kelvin shunt and independent current measurement. The architecture calls for a power stage rated for at least 5 A, while the normal command remains limited to 3.5 A. The additional component rating provides margin; it does not raise the allowed laser current.",
+          "Driver heat also interacts with the temperature-control system. In the architecture, I separated the filtered laser and thermoelectric-cooler supply branches and directed driver dissipation toward the chassis rather than the TEC cold side. A linear stage can improve current quality while making that thermal burden worse."
+        ]
+      },
+      {
+        "title": "Protection and architecture selection",
+        "paragraphs": [
+          "The design calls for an independent hardware shutdown or overcurrent latch, with a proposed trip range of 3.65–3.75 A. Protection should not depend entirely on the software setting the current correctly.",
+          "The hybrid option scored highest in the weighted comparison, but the direct buck was the recommended first build. That choice reduces initial complexity while preserving a way to test whether the added linear stage is necessary. The decision depends on measured behavior at the actual load, rather than assuming the more elaborate architecture is automatically the better system."
+        ]
+      },
+      {
+        "title": "Result",
+        "paragraphs": [
+          "The outcome is a documented set of requirements, an architecture comparison and a first-board recommendation. This remains a pre-prototype design study. Current accuracy, ripple, thermal drift and fault behavior still require characterization, beginning with a dummy load before connecting the laser."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/laser-requirements.webp",
+      "thumbnail": "projects/evidence/laser-requirements-thumb.webp",
+      "width": 1352,
+      "height": 1800,
+      "title": "Original laser-driver power and thermal requirements",
+      "alt": "Original laser-driver power and thermal requirements",
+      "caption": "The original requirements sketch connects the laser diode, power conversion, current sensing and thermal control. It records the starting requirements and candidate architecture, before a validated driver board.",
+      "kind": "Design notebook",
+      "source": "Laser-driver project · Design Requirements, page 1",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/laser-control-notes.webp",
+        "thumbnail": "projects/evidence/laser-control-notes-thumb.webp",
+        "width": 1394,
+        "height": 1800,
+        "title": "Electrical, thermal and control requirements",
+        "alt": "Electrical, thermal and control requirements",
+        "caption": "The second notebook page records the 0–3.5 A current range, 12 V source, heatsink/fan considerations and TEC/PID control questions. These are design requirements, not test measurements.",
+        "kind": "Design notebook",
+        "source": "Laser-driver project · Design Requirements, page 2",
+        "fit": "contain",
+        "section": 0
+      }
+    ]
+  },
+  {
+    "slug": "fsd",
+    "title": "FSD / camera perception",
+    "category": "Perception & graphics",
+    "status": "Research in progress",
+    "summary": "Turning camera observations into a spatial scene, with controlled experiments behind the picture.",
+    "art": "fsd",
+    "flow": [
+      "Camera observations",
+      "Spatial predictions",
+      "Inspectable scene"
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/WilliamXu070/fsd-scene"
+      }
+    ],
+    "role": "Perception research and experimental evaluation • Six-camera nuScenes pipeline",
+    "intro": [
+      "I’ve been developing a camera-based perception pipeline and testing how changes to its architecture and training affect the result. The six-camera nuScenes implementation predicts car and pedestrian boxes together with road and sidewalk outputs. I’m interested in improving the system while retaining enough experimental control to understand why a change helped or failed.",
+      "The work includes proposal selection, quality scoring, yaw supervision, feature injection and training-recipe experiments. A central requirement is that a candidate has to improve against a matched control, rather than only producing a promising screenshot or a better result on a small screening set."
+    ],
+    "sections": [
+      {
+        "title": "Keeping comparisons meaningful",
+        "paragraphs": [
+          "Branches start from the same checkpoint, with checks on retained tensors, optimizer state and resumability. I keep the original task scope in the comparison: both object classes and the road and sidewalk outputs. Removing a difficult class or reducing the perception range would change the problem being evaluated.",
+          "I also separate ranking changes from geometric changes. For example, a quality-scoring comparison should use identical boxes when testing whether a score improves precision at matched recall. Otherwise, it becomes difficult to tell whether the improvement came from the ranking or the underlying predictions.",
+          "Latency and memory have to be measured under the same six-camera configuration. A timing result for one module does not establish the frame rate of the complete pipeline."
+        ]
+      },
+      {
+        "title": "A result that did not justify adoption",
+        "paragraphs": [
+          "In the recorded September 13 campaign, lowering the restart learning rate avoided the larger regression caused by the higher rate. On full validation, car BEV AP50 changed from 37.46% for the retained epoch-18 model to 37.50% for the selected lower-rate continuation. Pedestrian BEV AP50 changed from 2.02% to 1.92%.",
+          "That did not satisfy the declared mean object-AP improvement rule, so I retained epoch 18. The small car improvement was not enough to justify replacing the model. These were custom research metrics, and I do not present them as official nuScenes NDS or a sealed-test result."
+        ]
+      },
+      {
+        "title": "Current research scope",
+        "paragraphs": [
+          "The later campaign03 plan sets out full-epoch comparisons for additional hypotheses, including corner supervision, higher-resolution lifting and audited object-surface depth targets. Those hypotheses remain distinct from the dated results above.",
+          "This project focuses on perception. The work has produced an implemented pipeline, controlled experiment branches and a record of decisions about which changes were supported by the evidence."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "astronomy",
+    "title": "Astronomy in the cold",
+    "category": "Human-centered design",
+    "status": "Team coursework",
+    "summary": "Understanding the gap between cold hands and the fine adjustments a telescope requires.",
+    "art": "system",
+    "flow": [
+      "Observer tasks",
+      "Design requirements",
+      "Concept evaluation"
+    ],
+    "links": [],
+    "role": "Praxis II team project • Stakeholder research, problem framing and requirements",
+    "intro": [
+      "In Praxis II, our team worked with the Royal Astronomical Society of Canada on the difficulty of operating telescopes in cold weather. We investigated a mismatch between the dexterity observers could maintain in the cold and the fine control their equipment required. Gloves could preserve warmth while making small adjustments harder, but removing them exposed the fingers needed for those adjustments.",
+      "Our research included conversations with RASC members, contact with our primary stakeholder and observation of the tasks involved in telescope use. We also looked at how people in other settings handled the same conflict between warmth and manual control."
+    ],
+    "sections": [
+      {
+        "title": "Framing the problem before choosing a device",
+        "paragraphs": [
+          "We kept two approaches open: preserve hand function in the cold, or reduce the dexterity the telescope requires. That gave us room to consider heating, hand protection, control adaptations and changes to the interaction, instead of committing immediately to a heated glove.",
+          "The requirements focused on observing tasks. We defined a micro-task protocol and set a target for task time no greater than 1.5 times the control condition. The design also had to work in low light without requiring bright or white-light activation, and avoid requiring bare-skin contact with cold metal.",
+          "We considered the telescope as part of the thermal system. Heat near the optical path can disturb observing quality, so the report included a target of no more than a 10% increase in stellar-image width relative to a comparable baseline. Proposed cold conditioning at −15 °C, a 2 kg added-mass limit and an 8 L packed-volume limit connected the concept to winter use and transport."
+        ]
+      },
+      {
+        "title": "What changed the design space",
+        "paragraphs": [
+          "Protective handlebar muffs used by delivery riders helped us think about alternating between warmth and dexterity. A person does not necessarily need the same hand configuration throughout the entire activity. That informed our exploration of a concept that provides warmth when needed and allows less obstructed movement for precise tasks.",
+          "The tradeoff was therefore broader than insulation thickness. We had to consider how often an observer transitions between modes, how difficult that transition is with cold hands, and whether it introduces another interruption to observing."
+        ]
+      },
+      {
+        "title": "Outcome",
+        "paragraphs": [
+          "We developed a requirements report grounded in the community’s workflow and used it to broaden and evaluate the concept space. The targets define success for subsequent prototype validation. The completed work described here is our problem framing, stakeholder research and concept development."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "bifrost",
+    "title": "The Bifröst",
+    "category": "Structures",
+    "status": "Built team coursework",
+    "summary": "A matboard bridge shaped by moving loads, buckling and a fixed material budget.",
+    "art": "system",
+    "flow": [
+      "Moving load envelope",
+      "Section & diaphragms",
+      "Bridge construction"
+    ],
+    "links": [],
+    "role": "CIV102 team project • Structural analysis and matboard bridge construction",
+    "intro": [
+      "I worked with Michael Mao Li, Beckett Deschamps and Jeffrey Hu to design and construct The Bifröst, a matboard bridge for CIV102. We had a 1200 mm span, a limited sheet of 1.27 mm matboard and prescribed moving train loads. Our goal was to predict the governing failure mode and improve load capacity while keeping the bridge practical to fabricate.",
+      "We began by analyzing the reference cross section, then revised the geometry, flange reinforcement and diaphragm layout. Hand calculations and MATLAB and Python analysis let us compare bending, shear and buckling under the moving load envelope."
+    ],
+    "sections": [
+      {
+        "title": "Working within the material budget",
+        "paragraphs": [
+          "A deeper section increases the second moment of area, but it also changes web stability. More material in the compression flange can help that failure mode while leaving less material for other reinforcement. We treated those changes as a coupled design problem instead of optimizing each dimension separately.",
+          "Fabrication constrained the analysis. A design had to fit on the available matboard and leave workable connections and glue tabs. Geometric efficiency was only useful if we could cut and assemble it accurately enough to realize the assumed section."
+        ]
+      },
+      {
+        "title": "Placing reinforcement where it mattered",
+        "paragraphs": [
+          "We investigated unequal diaphragm spacing using the shear envelope and thin-plate buckling relationships. The layout preserved required support and center constraints while placing reinforcement according to the demand along the span. That provided a way to use the available material more deliberately than applying one spacing everywhere.",
+          "The final report describes a 160 mm tall pi-beam with a 100 mm double-layer top flange, two webs spaced 60 mm apart and an unequal diaphragm layout."
+        ]
+      },
+      {
+        "title": "Result",
+        "paragraphs": [
+          "We constructed the bridge and predicted compression failure at **1.367 kN**. That value is an analytical prediction, not a measured failure load. Our model did not fully capture glue variability or cutting and assembly errors, which matter when transferring the calculated geometry into a physical structure.",
+          "The project connected structural analysis to a fabrication constraint I could see directly: every reinforcement choice had to fit into the same sheet and survive the way we assembled it."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/bridge-load-test.webp",
+      "thumbnail": "projects/evidence/bridge-load-test-thumb.webp",
+      "width": 960,
+      "height": 540,
+      "title": "Bifrost bridge in the physical load test",
+      "alt": "Bifrost bridge in the physical load test",
+      "caption": "A frame from the team’s original bridge-testing video. The footage documents the built bridge and loading setup; the 1.367 kN value discussed below is the design prediction.",
+      "kind": "Physical test footage",
+      "source": "CIV102 Team 202 · original test video, 00:00",
+      "fit": "cover"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/bridge-cut-layout.webp",
+        "thumbnail": "projects/evidence/bridge-cut-layout-thumb.webp",
+        "width": 1041,
+        "height": 1347,
+        "title": "Matboard cutting layout",
+        "alt": "Matboard cutting layout",
+        "caption": "The team’s cutting layout places the web, flange and reinforcement pieces within the available sheet. It makes the material-budget constraint visible.",
+        "kind": "Engineering drawing",
+        "source": "CIV102 Team 202 · Engineering Assembly, page 3",
+        "fit": "contain",
+        "section": 0
+      },
+      {
+        "src": "projects/evidence/bridge-assembly.webp",
+        "thumbnail": "projects/evidence/bridge-assembly-thumb.webp",
+        "width": 1041,
+        "height": 1347,
+        "title": "Bridge elevation and cross-section",
+        "alt": "Bridge elevation and cross-section",
+        "caption": "The team’s original dimensions and cross-section show the tall webs and doubled top flange used in the final design.",
+        "kind": "Engineering drawing",
+        "source": "CIV102 Team 202 · Engineering Assembly, page 4",
+        "fit": "contain",
+        "section": 1
+      },
+      {
+        "src": "projects/evidence/bridge-failure.webp",
+        "thumbnail": "projects/evidence/bridge-failure-thumb.webp",
+        "width": 960,
+        "height": 540,
+        "title": "Bridge failure during the physical test",
+        "alt": "Bridge failure during the physical test",
+        "caption": "The bridge during failure in the original test footage. A measured failure load cannot be read from this frame, so the analysis prediction remains separate from the physical observation.",
+        "kind": "Physical test footage",
+        "source": "CIV102 Team 202 · original test video, 00:04.64",
+        "fit": "contain",
+        "section": 2
+      }
+    ]
+  },
+  {
+    "slug": "can-opening",
+    "title": "A quieter can opening",
+    "category": "Mechanism design",
+    "status": "Team prototype",
+    "summary": "Comparing ways to release pressure while preserving portability, cleanliness and the drink.",
+    "art": "system",
+    "flow": [
+      "Opening concepts",
+      "Prototype comparison",
+      "Slider mechanism"
+    ],
+    "links": [],
+    "role": "Praxis I team project • Mechanism design and prototype comparison",
+    "intro": [
+      "Our Praxis I team investigated how to make a beverage can easier and quieter to open while retaining portability, cleanliness and the drink itself. We compared several approaches, including a needle-and-straw concept, opening under water, a rubber tab and a slider-based opening.",
+      "The requirements extended beyond sound. A concept also had to consider opening effort, sharp edges, contamination, cleaning and liquid loss. A quieter opening would not be useful if the mechanism made the can difficult to carry or introduced a new handling problem."
+    ],
+    "sections": [
+      {
+        "title": "Using uncertainty to guide testing",
+        "paragraphs": [
+          "We used pairwise comparisons and Pugh charts to narrow the concepts, then moved the uncertain comparisons into prototype testing. A question mark in the chart identified something we needed evidence for, such as whether a rubber sleeve would meaningfully change the acoustic response or whether a new opening would lose more liquid.",
+          "Shupeng Liu led the Pugh charts and convergence analysis. Our team’s subsequent comparisons examined sound, opening force and pressure, liquid retention, portability and cleaning. That allowed the final selection to draw on measured prototype behavior as well as the initial qualitative assessment."
+        ]
+      },
+      {
+        "title": "Changing the opening mechanism",
+        "paragraphs": [
+          "The slider concept changed how the can opened by removing the scored-ligament fracture mechanism and controlling the vent area. That addressed the opening event directly, instead of depending only on damping around the existing tab.",
+          "The change also affected sealing, exposed area and the force needed to operate the opening. Those interactions mattered because controlling pressure release could influence sound and beverage loss at the same time. The tradeoff was a more substantial change to the can architecture, with manufacturing and sealing questions that a simple accessory would avoid."
+        ]
+      },
+      {
+        "title": "Result",
+        "paragraphs": [
+          "Our prototype comparison favored the slider across the project’s main criteria and supported selecting it as the final concept. The outcome was a coursework prototype; manufacturing, long-term sealing and food-contact suitability remain questions for further development.",
+          "The useful result was a traceable design decision: we moved from several plausible mechanisms to a selected concept by testing the uncertainties that mattered to the requirements."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/can-morph-chart.webp",
+      "thumbnail": "projects/evidence/can-morph-chart-thumb.webp",
+      "width": 520,
+      "height": 400,
+      "title": "Original can-opening morphology chart",
+      "alt": "Original can-opening morphology chart",
+      "caption": "Our team’s original whiteboard chart breaks opening into functions and explores mechanisms for each one. This is the early design work behind the concepts we later compared.",
+      "kind": "Design notebook photograph",
+      "source": "Praxis I team · original design report, page 8",
+      "fit": "contain"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/can-underwater-concept.webp",
+        "thumbnail": "projects/evidence/can-underwater-concept-thumb.webp",
+        "width": 502,
+        "height": 415,
+        "title": "CAD concept for opening a can under water",
+        "alt": "CAD concept for opening a can under water",
+        "caption": "One of the alternatives considered during convergence: a collar that holds water around the opening. The CAD illustration documents a candidate mechanism, before the team selected the slider concept.",
+        "kind": "Concept CAD illustration",
+        "source": "Praxis I team · original design report, page 8",
+        "fit": "contain",
+        "section": 0
+      }
+    ]
+  },
+  {
+    "slug": "jungle",
+    "title": "Jungle",
+    "category": "Developer tools",
+    "status": "Two-person hackathon project",
+    "summary": "Browser-testing agents with inspectable history, approval gates and replay.",
+    "art": "system",
+    "flow": [
+      "Generate a test",
+      "Inspect execution",
+      "Branch & replay"
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/WilliamXu070/Genai_2026"
+      },
+      {
+        "label": "Project record",
+        "url": "https://devpost.com/software/jungle"
+      }
+    ],
+    "role": "GenAI Genesis 2026 • Two-person team • Agent runtime and test workflows",
+    "intro": [
+      "I co-developed Jungle as a desktop runtime for agents that generate, execute, critique and replay browser tests. I worked on approval gates, persistent run histories and artifacts, branching and replay, and a portable agentic CLI. The system uses Electron, Playwright, Python, Langflow and MySQL."
+    ],
+    "sections": [
+      {
+        "title": "Design decisions and outcome",
+        "paragraphs": [
+          "A generated test needs more than a final pass or fail message. Someone has to be able to inspect what was attempted, what happened in the browser and how the run reached that state. I built around persistent execution history so a failed attempt could remain available for comparison instead of being replaced by the next run.",
+          "Branching and replay support iteration from that record. Approval gates provide a point of control before an agent proceeds through a guarded action. These features add state-management complexity, but make the runtime easier to inspect when an agent behaves unexpectedly.",
+          "The result was a sandboxed test runtime with inspectable histories and recovery-oriented workflows. It does not establish that a model-generated test is correct simply because it executes. Generation, execution and critique remain separate parts of the process."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/jungle-approval-queue.webp",
+      "thumbnail": "projects/evidence/jungle-approval-queue-thumb.webp",
+      "width": 1048,
+      "height": 973,
+      "title": "Jungle application approval queue",
+      "alt": "Jungle application approval queue",
+      "caption": "The running desktop application from the original demo: persisted projects, approval-gated runs, execution status and a run timeline. This capture includes failed and cancelled runs, showing how the interface exposes execution state.",
+      "kind": "Recorded application demo",
+      "source": "Jungle project · original screen recording, 01:33.69",
+      "fit": "contain"
+    },
+    "evidence": []
+  },
+  {
+    "slug": "wicker",
+    "title": "Wicker",
+    "category": "AR interaction",
+    "status": "Team hackathon project",
+    "summary": "A voice-to-3D pipeline for pose references that can be manipulated with hand tracking.",
+    "art": "system",
+    "flow": [
+      "Generate a model",
+      "Rig & prepare",
+      "Pose in AR"
+    ],
+    "links": [
+      {
+        "label": "Project record",
+        "url": "https://devpost.com/software/ar-reference-pose"
+      }
+    ],
+    "role": "Hack the North 2025 • Team AR project • Generation and integration pipeline",
+    "intro": [
+      "Hack the North was my first hackathon. I arrived without a team and met teammates on the bus from Toronto to Waterloo. We shared an interest in augmented reality, which became Wicker: an AR pose-reference system for artists that generates 3D models from voice prompts and lets the user manipulate their pose through hand tracking."
+    ],
+    "sections": [
+      {
+        "title": "Design decisions and outcome",
+        "paragraphs": [
+          "I worked on the pipeline connecting generation, rigging, storage and the AR interaction. The project integrated Snap3D, Meshy AI and AWS using Node.js, Python and TypeScript. A generated mesh had to become an asset the application could load and manipulate, so the boundaries between services mattered as much as any individual API.",
+          "The design separates slower asset preparation from interactive posing. Once a model is available, manipulating it needs a responsive interaction loop rather than another generation request. The result was a prototype connecting a spoken idea to an editable AR reference, with the integration between stages forming much of the engineering work."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "looky",
+    "title": "Looky",
+    "category": "Geometry tools",
+    "status": "Open-source fork",
+    "summary": "Extending QuickLookStep with geometry selection, measurement and repeatable diagnostics.",
+    "art": "system",
+    "flow": [
+      "Imported geometry",
+      "Picking & measurement",
+      "Replayable diagnostics"
+    ],
+    "links": [
+      {
+        "label": "Extended fork",
+        "url": "https://github.com/WilliamXu070/Looky"
+      }
+    ],
+    "role": "QuickLookStep fork • Geometry interaction and diagnostics",
+    "intro": [
+      "I extended an existing macOS model viewer and Quick Look project with geometry import, selection, measurement and diagnostics. My work used SwiftUI, SceneKit and Metal, including CPU bounding-volume-hierarchy logic for picking edges and surfaces."
+    ],
+    "sections": [
+      {
+        "title": "Design decisions and outcome",
+        "paragraphs": [
+          "Selection has to remain consistent across the imported geometry, scene coordinates and the point the user indicates on screen. A model that renders correctly can still produce the wrong selection or measurement if those representations disagree. I added diagnostic workflows and replayable tests around selection accuracy and coordinate mapping so those errors could be examined repeatedly.",
+          "The result is my extended Looky fork of QuickLookStep. My contributions build on the original viewer, adding more detailed geometry interaction and repeatable ways to investigate selection and measurement behavior."
+        ]
+      }
+    ],
+    "media": {
+      "src": "projects/evidence/looky-step-import.webp",
+      "thumbnail": "projects/evidence/looky-step-import-thumb.webp",
+      "width": 1024,
+      "height": 768,
+      "title": "STEP fixture rendered by Looky",
+      "alt": "STEP fixture rendered by Looky",
+      "caption": "An original recorded viewer test after loading a STEP cube-with-hole fixture. This demonstrates the imported geometry in the viewer; selection accuracy and measurement require their separate diagnostics.",
+      "kind": "Recorded viewer test",
+      "source": "Looky extended fork · STEP load fixture",
+      "fit": "contain",
+      "sourceUrl": "https://github.com/WilliamXu070/Looky/tree/main/testing/results/screenshots/cube-hole-step"
+    },
+    "evidence": [
+      {
+        "src": "projects/evidence/looky-adapter-import.webp",
+        "thumbnail": "projects/evidence/looky-adapter-import-thumb.webp",
+        "width": 1024,
+        "height": 768,
+        "title": "3MF adapter fixture rendered by Looky",
+        "alt": "3MF adapter fixture rendered by Looky",
+        "caption": "A second original load test using a 3MF adapter model. The adapter is an import fixture, not a claim that I designed the part. Only the initial-load capture is shown here.",
+        "kind": "Recorded viewer test",
+        "source": "Looky extended fork · 3MF load fixture",
+        "fit": "contain",
+        "section": 0,
+        "sourceUrl": "https://github.com/WilliamXu070/Looky/tree/main/testing/results/screenshots/thor-3mf-user-verify2"
+      }
+    ]
+  },
+  {
+    "slug": "newmux",
+    "title": "Newmux",
+    "category": "Developer tools",
+    "status": "Workflow implementation",
+    "summary": "Recoverable terminal state, soft deletion and restoration around Ghostty and tmux.",
+    "art": "system",
+    "flow": [
+      "Session state",
+      "Soft deletion",
+      "History & restore"
+    ],
+    "links": [
+      {
+        "label": "Repository",
+        "url": "https://github.com/WilliamXu070/newmux"
+      }
+    ],
+    "role": "Terminal workflow development • Recoverable state and regression testing",
+    "intro": [
+      "I built Newmux around Ghostty and tmux workflows, focusing on recoverable terminal state. The implementation supports soft deletion, restoration and history, with build and regression scripts covering terminal, tab, session, keyboard and restore behavior."
+    ],
+    "sections": [
+      {
+        "title": "Design decisions and outcome",
+        "paragraphs": [
+          "Recovery changes what a close or delete action means. The system needs to retain enough state to restore the intended context while keeping the visible session understandable. That creates a tradeoff between simple immediate deletion and a more explicit lifecycle for recoverable objects.",
+          "My work centered on those state transitions and their regression behavior. The result is a workflow distribution with explicit history and restoration features around the terminal session, backed by checks for the transitions most likely to break recovery."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "framegen",
+    "title": "FrameGen",
+    "category": "ML tooling",
+    "status": "Early scaffolding",
+    "summary": "An early implementation for experimenting with frame interpolation and evaluation.",
+    "art": "system",
+    "flow": [
+      "Input sequence",
+      "Interpolation model",
+      "Frame processing"
+    ],
+    "links": [],
+    "role": "Early frame-interpolation project • Model and processing scaffolding",
+    "intro": [
+      "I created scaffolding for a frame-interpolation project, covering model configuration, training and frame processing. The aim is to estimate intermediate frames from an input sequence, which creates a tradeoff between visual quality and the cost of inference."
+    ],
+    "sections": [
+      {
+        "title": "Design decisions and outcome",
+        "paragraphs": [
+          "The outcome of this stage is the implementation scaffolding for experimenting with that pipeline. Model configuration, training and frame processing are represented in the project, while a reproducible comparison of image quality and inference performance remains a separate evaluation task."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "source": "artifacts\\renderer-redesign\\reviews\\G1\\composition-lights.blend",
+  "source_sha256": "675b8c01dd409dcd929482e615516dfd517c909cd63488a7a68ca12d71ebb6b3",
+  "coordinate_system": "GLTF Y-up; rotate asset wrapper +90 degrees about X for simulation Z-up",
+  "camera": {
+    "position_m": [
+      -22.24756622314453,
+      -1.7999999523162842,
+      6.828668594360352
+    ],
+    "pitch_deg": 10.20015383918636,
+    "lens_mm": 32,
+    "sensor_width_mm": 36,
+    "shift_x": 0.0059912852011621
+  },
+  "lights": [
+    {
+      "name": "Ego_LowBeam_-1",
+      "type": "SPOT",
+      "watts": 1800,
+      "local_position": [
+        2.869999885559082,
+        -0.7200000286102295,
+        0.800000011920929
+      ],
+      "color": [
+        0.8399999737739563,
+        0.9100000262260437,
+        1
+      ],
+      "cone_degrees": 51.999999170302104
+    },
+    {
+      "name": "Ego_LowBeam_1",
+      "type": "SPOT",
+      "watts": 1800,
+      "local_position": [
+        2.869999885559082,
+        0.7200000286102295,
+        0.800000011920929
+      ],
+      "color": [
+        0.8399999737739563,
+        0.9100000262260437,
+        1
+      ],
+      "cone_degrees": 51.999999170302104
+    },
+    {
+      "name": "Ego_TailSpill",
+      "type": "SPOT",
+      "watts": 120,
+      "local_position": [
+        -2.880000114440918,
+        0,
+        0.949999988079071
+      ],
+      "color": [
+        1,
+        0.004999999888241291,
+        0.0010000000474974513
+      ],
+      "cone_degrees": 95.00000150525098
+    }
+  ],
+  "files": {
+    "cybertruck.glb": "d83d7746e1007fe36a989462439e208a00adde69755f09482c1bb6c0de35568d",
+    "detected-car.glb": "b9216899fb02182232769e473f1da51ece51a4bd5839951f7518d94afbdc88dd",
+    "detected-human.glb": "1a2dad8ac916332885bed83e96e85b44a4a2ee2e8289a4cabf926b7c5aeb8dae"
+  }
+}

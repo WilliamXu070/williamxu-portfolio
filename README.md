@@ -1,36 +1,43 @@
-# William Xu — Personal Portfolio
+# William Xu — Engineering portfolio
 
-A modern, responsive personal portfolio built with React, Vite, and Tailwind CSS.
+A full-screen recorded FSD hero opens an image-led portfolio of optics, hardware, perception and software projects. The project gallery uses unequal image sizes and staggered placement, informed by Gonzalo Morales and Christine Liang. Jane Koo's product compositions and Tiffany Tedy's interactive Cybertruck guide remain references for the opening and detailed case studies. All project images are retained engineering evidence, with source credits and development-stage qualifications.
 
-## Features
-- **React + Vite**: Fast, modern frontend stack
-- **Tailwind CSS**: Utility-first styling for rapid UI development
-- **Responsive Design**: Optimized for mobile, tablet, and desktop
-- **Dark/Light Theme Toggle**: Accessible and visually appealing
-- **Sticky Sidebar**: Easy navigation between sections
-- **Dynamic Sections**: About, Experience, Projects, Awards, Skills
-- **Contact Section**: Email, phone, and social links with icons
-- **Accessible**: Keyboard and screen reader friendly
+## Run and verify
 
-## How to Run Locally
-1. **Install dependencies**
-   ```bash
-   npm install
-   ```
-2. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-3. Open the local URL (usually http://localhost:5173) in your browser.
+```sh
+npm ci
+npm run dev
+npm run lint:experiment
+npm run test:scene
+npm run build
+```
 
-## Customization
-- All content is managed in `src/App.jsx`.
-- Easily update sections, links, and icons.
-- Favicon and site title can be changed in `index.html`.
+Vite uses the `/williamxu-portfolio/` base path. The current entry point is `src/PortfolioExperiment.jsx`; `src/App.jsx` is a retained earlier version.
 
-## Credits
-- Inspired by Brittany Chiang's portfolio layout
-- Built by William Xu
+## Content and interactions
 
----
-Feel free to fork and adapt for your own use!
+- `src/content/projects.json`: the 16 first-person project accounts, source links and evidence captions.
+- `src/content/inspection.js`: image view labels and selectable engineering annotations. Point coordinates are percentages of the original image.
+- `src/components/EvidenceExplorer.jsx`: accessible image views, hotspots, captions, source credits and links to the matching design account. Tabs support arrow, Home and End keys; every hotspot also has a text button.
+- `src/components/FsdScene.jsx`: the full-screen animated homepage hero, with pause/play controls, a still-image fallback and reduced-motion support. Its Three.js module loads asynchronously and the canvas is disposed when navigating away.
+- `src/components/PerceptionFeature.jsx`: user-activated playback inside the FSD case study, with the same scene and cleanup behavior.
+- `public/projects/evidence/`: original curated project media and provenance.
+- `public/fsd/`: the recorded perception scene and its asset/dataset attribution.
+- `src/components/HomeProjects.jsx` and `src/home-projects.css`: the staggered project gallery, full-width FRIDAY feature and compact project archive.
+- `src/portfolio.css`: hero, viewer and case-study styling.
+
+## Review status
+
+Branch `test/fsd-portfolio` is a draft review branch. Its GitHub workflow validates and uploads a build artifact; it does not deploy to production.
+
+See `docs/tesla-composition-redesign.md` for the design rationale and `docs/redesign-verification.json` for the verification record. Earlier design documents and screenshots describe historical iterations.
+
+## References
+
+- [Gonzalo Morales](https://gmoral.es/): varied project scale and staggered composition.
+- [Christine Liang](https://www.christineliangdesign.com/): evidence-led project images and concise contribution captions.
+
+- [Jane Koo](https://janekoo.design/): large product compositions, image treatment and restrained navigation.
+- [Tiffany Tedy's Cybertruck guide](https://www.tifftedy.com/work/tesla-cybertruck): selecting components to understand a system.
+
+The portfolio uses William's own project evidence and credited team material. It is not affiliated with Tesla and does not reuse the reference designers' artwork.
